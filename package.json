@@ -1,0 +1,31 @@
+{
+    "name": "webstore_project",
+    "version": "1.0.0",
+    "description": "This is my pet-Project.\r I'm gonna built website for purchasing!)",
+    "main": "index.js",
+    "scripts": {
+        "start": "live-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VitaliiDmytriv/WebStore_Project.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/VitaliiDmytriv/WebStore_Project/issues"
+    },
+    "homepage": "https://github.com/VitaliiDmytriv/WebStore_Project#readme",
+    "dependencies": {
+        "live-server": "^1.2.2"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-sass": "^5.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-watch": "^5.0.1",
+        "sass": "^1.58.0"
+    }
+}

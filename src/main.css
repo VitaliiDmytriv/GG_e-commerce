@@ -1,0 +1,178 @@
+{"version":3,"sources":["null.scss"],"names":[],"mappings":";AAAA;AACA;EACC;EACA;EACA;;;AAED;AAAA;AAAA;EAGC;EACA;EACA;;;AAED;AAAA;EAEC;;;AAED;AAAA;EAEC;;;AAED;AAAA;AAAA;AAAA;EAIC;;;AAED;AAAA;EAEC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAED;AAAA;AAAA;EAGC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;EACA;;;AAED;AAAA;EAEC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;AAAA;AAAA;AAAA;AAAA;AAAA;EAMC;EACA;;;AAED","file":"null.css","sourcesContent":["/*Обнуление*/\r\n* {\r\n\tpadding: 0;\r\n\tmargin: 0;\r\n\tborder: 0;\r\n}\r\n*,\r\n*:before,\r\n*:after {\r\n\t-moz-box-sizing: border-box;\r\n\t-webkit-box-sizing: border-box;\r\n\tbox-sizing: border-box;\r\n}\r\n:focus,\r\n:active {\r\n\toutline: none;\r\n}\r\na:focus,\r\na:active {\r\n\toutline: none;\r\n}\r\nnav,\r\nfooter,\r\nheader,\r\naside {\r\n\tdisplay: block;\r\n}\r\nhtml,\r\nbody {\r\n\theight: 100%;\r\n\twidth: 100%;\r\n\tfont-size: 100%;\r\n\tline-height: 1;\r\n\tfont-size: 14px;\r\n\t-ms-text-size-adjust: 100%;\r\n\t-moz-text-size-adjust: 100%;\r\n\t-webkit-text-size-adjust: 100%;\r\n}\r\ninput,\r\nbutton,\r\ntextarea {\r\n\tfont-family: inherit;\r\n}\r\ninput::-ms-clear {\r\n\tdisplay: none;\r\n}\r\nbutton {\r\n\tcursor: pointer;\r\n}\r\nbutton::-moz-focus-inner {\r\n\tpadding: 0;\r\n\tborder: 0;\r\n}\r\na,\r\na:visited {\r\n\ttext-decoration: none;\r\n}\r\na:hover {\r\n\ttext-decoration: none;\r\n}\r\nul li {\r\n\tlist-style: none;\r\n}\r\nimg {\r\n\tvertical-align: top;\r\n}\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n\tfont-size: inherit;\r\n\tfont-weight: inherit;\r\n}\r\n/*--------------------*/\r\n"]}
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+/*# sourceMappingURL=null.css.map */
+
+{"version":3,"sources":["responsiveFont.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAGJ;AAAA;AAAA;AAAA;AAAA;AAAA;EAMI;;;AAGJ;EACI;EACA;;;AAEJ;EACI;EACA;;;AAEJ;EACI;EACA;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAGJ;AAAA;AAAA;EAGI;;;AAGJ;EACI;IACI;IACA;;EAGJ;IACI;IACA;;EAGJ;IACI;IACA;;EAGJ;IACI;IACA;;EAEJ;AAAA;AAAA;IAGI","file":"responsiveFont.css","sourcesContent":[".main-ctnr {\r\n    width: 100%;\r\n    max-width: 1140px;\r\n    margin: auto;\r\n}\r\n\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    margin: calc(12px + 1.05vw) 0; /* Responsive margins */\r\n}\r\n\r\nh1 {\r\n    font-size: 1.912em;\r\n    line-height: calc(18px + 1.8vw); /* Responsive Vertical Rhythm */\r\n}\r\nh2 {\r\n    font-size: 1.616em;\r\n    line-height: calc(18px + 1vw); /* Responsive Vertical Rhythm */\r\n}\r\nh3 {\r\n    font-size: 1.471em;\r\n    line-height: calc(18px + 0.7vw); /* Responsive Vertical Rhythm */\r\n}\r\nh4 {\r\n    font-size: 1.3em;\r\n}\r\nh5 {\r\n    font-size: 1.243em;\r\n}\r\nh6 {\r\n    font-size: 1.132em;\r\n}\r\n\r\nh4,\r\nh5,\r\nh6 {\r\n    line-height: calc(18px + 0.2vw); /* Responsive Vertical Rhythm */\r\n}\r\n\r\n@media (hover: none) {\r\n    body {\r\n        font-size: calc(12px + 1.2vw); /* was 0.35vw  */\r\n        line-height: calc(12px + 2.7vw); /* was 1.05vw */\r\n    }\r\n\r\n    h1 {\r\n        font-size: 1.912em;\r\n        line-height: calc(18px + 4.6vw); /* was 1.8vw */\r\n    }\r\n\r\n    h2 {\r\n        font-size: 1.616em;\r\n        line-height: calc(18px + 3.6vw); /* was 1vw */\r\n    }\r\n\r\n    h3 {\r\n        font-size: 1.471em;\r\n        line-height: calc(18px + 3.6vw); /* was 0.7vw */\r\n    }\r\n    h4,\r\n    h5,\r\n    h6 {\r\n        line-height: calc(18px + 2.6vw); /* was .2vw */\r\n    }\r\n}\r\n"]}
+.main-ctnr {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: calc(12px + 1.05vw) 0; /* Responsive margins */
+}
+
+h1 {
+  font-size: 1.912em;
+  line-height: calc(18px + 1.8vw); /* Responsive Vertical Rhythm */
+}
+
+h2 {
+  font-size: 1.616em;
+  line-height: calc(18px + 1vw); /* Responsive Vertical Rhythm */
+}
+
+h3 {
+  font-size: 1.471em;
+  line-height: calc(18px + 0.7vw); /* Responsive Vertical Rhythm */
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+h5 {
+  font-size: 1.243em;
+}
+
+h6 {
+  font-size: 1.132em;
+}
+
+h4,
+h5,
+h6 {
+  line-height: calc(18px + 0.2vw); /* Responsive Vertical Rhythm */
+}
+
+@media (hover: none) {
+  body {
+    font-size: calc(12px + 1.2vw); /* was 0.35vw  */
+    line-height: calc(12px + 2.7vw); /* was 1.05vw */
+  }
+  h1 {
+    font-size: 1.912em;
+    line-height: calc(18px + 4.6vw); /* was 1.8vw */
+  }
+  h2 {
+    font-size: 1.616em;
+    line-height: calc(18px + 3.6vw); /* was 1vw */
+  }
+  h3 {
+    font-size: 1.471em;
+    line-height: calc(18px + 3.6vw); /* was 0.7vw */
+  }
+  h4,
+  h5,
+  h6 {
+    line-height: calc(18px + 2.6vw); /* was .2vw */
+  }
+}
+/*# sourceMappingURL=responsiveFont.css.map */
+
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACI;EAEA;EACA;EACA;EACA","file":"style.css","sourcesContent":["body {\r\n    font-size: calc(12px + 0.35vw);\r\n    // font-size: 16px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    padding: 1rem;\r\n    margin: 0px;\r\n    line-height: calc(12px + 1.05vw);\r\n}\r\n"]}
+body {
+  font-size: calc(12px + 0.35vw);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  margin: 0px;
+  line-height: calc(12px + 1.05vw);
+}
+/*# sourceMappingURL=style.css.map */
