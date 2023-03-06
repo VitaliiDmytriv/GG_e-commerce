@@ -1,8 +1,23 @@
+@import "font.scss";
+
+// Variables ======================
+$clr-background: #23232f;
+$clr-white: #ffff;
+$clr-blue: #676eff;
+$clr-text: #72748e;
+
 body {
-    font-size: calc(12px + 0.35vw);
-    // font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem;
-    margin: 0px;
-    line-height: calc(12px + 1.05vw);
+    background-color: $clr-background;
+    color: $clr-white;
+}
+
+.hero p:first-of-type {
+    font-family: "Cabin";
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20rem;
+}
+
+.hero p:last-of-type {
+    font-family: Gotham;
 }
