@@ -49,7 +49,7 @@
 }
 /*# sourceMappingURL=font.css.map */
 
-{"version":3,"sources":["null.scss"],"names":[],"mappings":";AAAA;AACA;EACC;EACA;EACA;;;AAED;AAAA;AAAA;EAGC;EACA;EACA;;;AAED;AAAA;EAEC;;;AAED;AAAA;EAEC;;;AAED;AAAA;AAAA;AAAA;EAIC;;;AAED;AAAA;EAEC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAED;AAAA;AAAA;EAGC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;EACA;;;AAED;AAAA;EAEC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;AAAA;AAAA;AAAA;AAAA;AAAA;EAMC;EACA;;;AAED","file":"null.css","sourcesContent":["/*Обнуление*/\r\n* {\r\n\tpadding: 0;\r\n\tmargin: 0;\r\n\tborder: 0;\r\n}\r\n*,\r\n*:before,\r\n*:after {\r\n\t-moz-box-sizing: border-box;\r\n\t-webkit-box-sizing: border-box;\r\n\tbox-sizing: border-box;\r\n}\r\n:focus,\r\n:active {\r\n\toutline: none;\r\n}\r\na:focus,\r\na:active {\r\n\toutline: none;\r\n}\r\nnav,\r\nfooter,\r\nheader,\r\naside {\r\n\tdisplay: block;\r\n}\r\nhtml,\r\nbody {\r\n\theight: 100%;\r\n\twidth: 100%;\r\n\tfont-size: 100%;\r\n\tline-height: 1;\r\n\tfont-size: 14px;\r\n\t-ms-text-size-adjust: 100%;\r\n\t-moz-text-size-adjust: 100%;\r\n\t-webkit-text-size-adjust: 100%;\r\n}\r\ninput,\r\nbutton,\r\ntextarea {\r\n\tfont-family: inherit;\r\n}\r\ninput::-ms-clear {\r\n\tdisplay: none;\r\n}\r\nbutton {\r\n\tcursor: pointer;\r\n}\r\nbutton::-moz-focus-inner {\r\n\tpadding: 0;\r\n\tborder: 0;\r\n}\r\na,\r\na:visited {\r\n\ttext-decoration: none;\r\n}\r\na:hover {\r\n\ttext-decoration: none;\r\n}\r\nul li {\r\n\tlist-style: none;\r\n}\r\nimg {\r\n\tvertical-align: top;\r\n}\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n\tfont-size: inherit;\r\n\tfont-weight: inherit;\r\n}\r\n/*--------------------*/\r\n"]}
+{"version":3,"sources":["null.scss"],"names":[],"mappings":";AAAA;AACA;EACI;EACA;EACA;;;AAEJ;AAAA;AAAA;EAGI;EACA;EACA;;;AAEJ;AAAA;EAEI;;;AAEJ;AAAA;EAEI;;;AAEJ;AAAA;AAAA;AAAA;EAII;;;AAEJ;AAAA;EAEI;EACA;EACA;EACA;EAEA;EACA;EACA;;;AAEJ;AAAA;AAAA;EAGI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;EACA;;;AAEJ;AAAA;EAEI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;AAAA;AAAA;AAAA;AAAA;AAAA;EAMI;EACA;;;AAEJ","file":"null.css","sourcesContent":["/*Обнуление*/\r\n* {\r\n    padding: 0;\r\n    margin: 0;\r\n    border: 0;\r\n}\r\n*,\r\n*:before,\r\n*:after {\r\n    -moz-box-sizing: border-box;\r\n    -webkit-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n:focus,\r\n:active {\r\n    outline: none;\r\n}\r\na:focus,\r\na:active {\r\n    outline: none;\r\n}\r\nnav,\r\nfooter,\r\nheader,\r\naside {\r\n    display: block;\r\n}\r\nhtml,\r\nbody {\r\n    height: 100%;\r\n    width: 100%;\r\n    font-size: 100%;\r\n    line-height: 1;\r\n    // font-size: 14px;\r\n    -ms-text-size-adjust: 100%;\r\n    -moz-text-size-adjust: 100%;\r\n    -webkit-text-size-adjust: 100%;\r\n}\r\ninput,\r\nbutton,\r\ntextarea {\r\n    font-family: inherit;\r\n}\r\ninput::-ms-clear {\r\n    display: none;\r\n}\r\nbutton {\r\n    cursor: pointer;\r\n}\r\nbutton::-moz-focus-inner {\r\n    padding: 0;\r\n    border: 0;\r\n}\r\na,\r\na:visited {\r\n    text-decoration: none;\r\n}\r\na:hover {\r\n    text-decoration: none;\r\n}\r\nul li {\r\n    list-style: none;\r\n}\r\nimg {\r\n    vertical-align: top;\r\n}\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    font-size: inherit;\r\n    font-weight: inherit;\r\n}\r\n/*--------------------*/\r\n"]}
 @charset "UTF-8";
 /*Обнуление*/
 * {
@@ -89,7 +89,6 @@ body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -148,7 +147,7 @@ h6 {
 
 /*# sourceMappingURL=responsiveFont.css.map */
 
-{"version":3,"sources":["font.scss","style.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAKJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AC/DJ;EACI,kBANa;EAOb,OANQ;;;AASZ;EACI;EACA;EACA;EACA;;;AAGJ;EACI","file":"style.css","sourcesContent":["@font-face {\r\n    font-family: \"Cabin\";\r\n    src: url(\"font/Cabin-Regular.eot\");\r\n    src: url(\"font/Cabin-Regular.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Cabin-Regular.woff2\") format(\"woff2\"),\r\n        url(\"font/Cabin-Regular.woff\") format(\"woff\"),\r\n        url(\"font/Cabin-Regular.ttf\") format(\"truetype\");\r\n    font-weight: normal;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Cabin\";\r\n    src: url(\"font/Cabin-Medium.eot\");\r\n    src: url(\"font/Cabin-Medium.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Cabin-Medium.woff2\") format(\"woff2\"),\r\n        url(\"font/Cabin-Medium.woff\") format(\"woff\"),\r\n        url(\"font/Cabin-Medium.ttf\") format(\"truetype\");\r\n    font-weight: 500;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Cabin\";\r\n    src: url(\"font/Cabin-Bold.eot\");\r\n    src: url(\"font/Cabin-Bold.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Cabin-Bold.woff2\") format(\"woff2\"),\r\n        url(\"font/Cabin-Bold.woff\") format(\"woff\"),\r\n        url(\"font/Cabin-Bold.ttf\") format(\"truetype\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n// =====================================================================\r\n\r\n@font-face {\r\n    font-family: \"Gotham\";\r\n    src: url(\"font/Gotham-Book.eot\");\r\n    src: url(\"font/Gotham-Book.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Gotham-Book.woff2\") format(\"woff2\"),\r\n        url(\"font/Gotham-Book.woff\") format(\"woff\"),\r\n        url(\"font/Gotham-Book.ttf\") format(\"truetype\");\r\n    font-weight: normal;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Gotham\";\r\n    src: url(\"font/Gotham-Medium.eot\");\r\n    src: url(\"font/Gotham-Medium.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Gotham-Medium.woff2\") format(\"woff2\"),\r\n        url(\"font/Gotham-Medium.woff\") format(\"woff\"),\r\n        url(\"font/Gotham-Medium.ttf\") format(\"truetype\");\r\n    font-weight: 500;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Gotham\";\r\n    src: url(\"font/Gotham-Bold.eot\");\r\n    src: url(\"font/Gotham-Bold.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Gotham-Bold.woff2\") format(\"woff2\"),\r\n        url(\"font/Gotham-Bold.woff\") format(\"woff\"),\r\n        url(\"font/Gotham-Bold.ttf\") format(\"truetype\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n","@import \"font.scss\";\r\n\r\n// Variables ======================\r\n$clr-background: #23232f;\r\n$clr-white: #ffff;\r\n$clr-blue: #676eff;\r\n$clr-text: #72748e;\r\n\r\nbody {\r\n    background-color: $clr-background;\r\n    color: $clr-white;\r\n}\r\n\r\n.hero p:first-of-type {\r\n    font-family: \"Cabin\";\r\n    margin-bottom: 20px;\r\n    font-weight: 700;\r\n    font-size: 20rem;\r\n}\r\n\r\n.hero p:last-of-type {\r\n    font-family: Gotham;\r\n}\r\n"]}
+{"version":3,"sources":["font.scss","style.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAKJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;ACjDJ;EACI,kBApBa;EAqBb,OApBQ;;;AAuBZ;EACI;EACA;EACA;EACA;EACA;EACA;EAEA;EAEA;;AACA;EAXJ;IAYQ;;;;AAIR;EACI;;AAIA;EACI;EACA;EACA;EACA;EArCJ;EACA;EACA;EAqCI;EAEA,OAlDG;;AAoDH;EAVJ;IAWQ;IACA;IACA;;;AAGJ;EACI;EACA;EACA;;AAEA;EALJ;IAMQ;;;AAGJ;EACI;;AAGJ;EACI;;AAOZ;EACI;EACA;EACA;EACA;;AAEA;EANJ;IAOQ;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EATJ;IAUQ;IACA;;;AAIR;EACI;EAEA;EACA;EACA;EACA,OA9GI;EA+GJ;EACA;EACA;;AACA;EAVJ;IAWQ;;;AAIR;EAaI;;AAZA;EACI;EACA;EACA;;AAKJ;EACI;;AAIJ;EACI;EACA;EACA;EACA;EACA;EACA;EAEA;EAEA;;AAIR;EACI;;AAEA;EAHJ;IA3IA;IACA;IACA;;;AAgJI;EAPJ;IAQQ;;;AAIR;EACI;;AAEA;EAHJ;IAvJA;IACA;IACA;;;AA4JI;EAPJ;IAQQ;;;AAIR;EACI,OA7KG;EA8KH;EACA;;AAGJ;EACI,OApLG;;;AAwLX;EACI;;AAEA;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;;AAIR;EACI;IACI;IACA;;EAEJ;IACI;IACA;;;AAIR;EACI;IACI;IACA;;EAEJ;IACI;IACA;;;AAIR;EACI;IACI;IACA;;EAEJ;IACI;;;AAIR;EACI;IACI;;EAEJ;IACI;;;AAIR;EACI;IACI;IACA;;EAEJ;IACI;IACA","file":"style.css","sourcesContent":["@font-face {\r\n    font-family: \"Cabin\";\r\n    src: url(\"font/Cabin-Regular.eot\");\r\n    src: url(\"font/Cabin-Regular.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Cabin-Regular.woff2\") format(\"woff2\"),\r\n        url(\"font/Cabin-Regular.woff\") format(\"woff\"),\r\n        url(\"font/Cabin-Regular.ttf\") format(\"truetype\");\r\n    font-weight: normal;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Cabin\";\r\n    src: url(\"font/Cabin-Medium.eot\");\r\n    src: url(\"font/Cabin-Medium.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Cabin-Medium.woff2\") format(\"woff2\"),\r\n        url(\"font/Cabin-Medium.woff\") format(\"woff\"),\r\n        url(\"font/Cabin-Medium.ttf\") format(\"truetype\");\r\n    font-weight: 500;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Cabin\";\r\n    src: url(\"font/Cabin-Bold.eot\");\r\n    src: url(\"font/Cabin-Bold.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Cabin-Bold.woff2\") format(\"woff2\"),\r\n        url(\"font/Cabin-Bold.woff\") format(\"woff\"),\r\n        url(\"font/Cabin-Bold.ttf\") format(\"truetype\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n// =====================================================================\r\n\r\n@font-face {\r\n    font-family: \"Gotham\";\r\n    src: url(\"font/Gotham-Book.eot\");\r\n    src: url(\"font/Gotham-Book.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Gotham-Book.woff2\") format(\"woff2\"),\r\n        url(\"font/Gotham-Book.woff\") format(\"woff\"),\r\n        url(\"font/Gotham-Book.ttf\") format(\"truetype\");\r\n    font-weight: normal;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Gotham\";\r\n    src: url(\"font/Gotham-Medium.eot\");\r\n    src: url(\"font/Gotham-Medium.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Gotham-Medium.woff2\") format(\"woff2\"),\r\n        url(\"font/Gotham-Medium.woff\") format(\"woff\"),\r\n        url(\"font/Gotham-Medium.ttf\") format(\"truetype\");\r\n    font-weight: 500;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Gotham\";\r\n    src: url(\"font/Gotham-Bold.eot\");\r\n    src: url(\"font/Gotham-Bold.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Gotham-Bold.woff2\") format(\"woff2\"),\r\n        url(\"font/Gotham-Bold.woff\") format(\"woff\"),\r\n        url(\"font/Gotham-Bold.ttf\") format(\"truetype\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n","@import \"font.scss\";\r\n\r\n// Variables ======================\r\n$clr-background: #23232f;\r\n$clr-white: #ffff;\r\n$clr-blue: #676eff;\r\n$clr-text: #72748e;\r\n$clr-text2: #72748e27;\r\n\r\n// (86*16) +  (24* 15) = 1736px\r\n\r\n$baseFZ: 16;\r\n$baseVW: 0.390625vw;\r\n\r\n@mixin fontSize($fz, $fluidFZ, $lineHeight, $marginB: 0) {\r\n    font-size: calc($fluidFZ / $baseFZ + $baseVW);\r\n    line-height: calc($lineHeight / $fz);\r\n    margin-bottom: calc($marginB / $fz);\r\n}\r\n\r\n// =======================================================\r\n\r\nbody {\r\n    background-color: $clr-background;\r\n    color: $clr-white;\r\n}\r\n\r\n.grid-16 {\r\n    max-width: 112.5rem;\r\n    margin: auto;\r\n    min-height: 100vh;\r\n    display: grid;\r\n    grid-template-columns: repeat(12, 1fr);\r\n    grid-template-rows: repeat(6, 1fr);\r\n\r\n    padding: 0 2rem;\r\n\r\n    font-family: Gotham;\r\n    @media (min-width: 70rem) {\r\n        column-gap: 1.5rem;\r\n    }\r\n}\r\n\r\n.hero {\r\n    overflow: hidden;\r\n\r\n    // slider-chevrons ============\r\n\r\n    &__chevrons {\r\n        grid-column: 12;\r\n        grid-row: 3 / span 2;\r\n        display: flex;\r\n        flex-direction: column;\r\n        @include fontSize(50, 44.5rem, 60);\r\n        justify-content: flex-end;\r\n\r\n        color: $clr-text;\r\n\r\n        @media (min-width: 70rem) {\r\n            grid-row: 4 / span 2;\r\n            justify-content: center;\r\n            align-self: center;\r\n        }\r\n\r\n        .fa-solid {\r\n            cursor: pointer;\r\n            transition: color 0.3s;\r\n            margin-bottom: 0.44em;\r\n\r\n            @media (min-width: 70rem) {\r\n                margin-bottom: 1.4em;\r\n            }\r\n\r\n            &:hover {\r\n                color: #b9b9c4;\r\n            }\r\n\r\n            &:last-of-type {\r\n                margin-bottom: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n    // slider =====================\r\n\r\n    &__slider {\r\n        grid-column: 1 / span 11;\r\n        grid-row: 2 / span 4;\r\n        margin: 0;\r\n        position: relative;\r\n\r\n        @media (min-width: 70rem) {\r\n            grid-column: 3 / span 9;\r\n        }\r\n    }\r\n\r\n    &__slide {\r\n        position: absolute;\r\n        opacity: 0;\r\n        display: grid;\r\n        grid-template-columns: 1fr;\r\n        grid-template-areas: \"left \" \"rigth \";\r\n        grid-template-rows: max-content 1fr;\r\n        padding: 1rem 0;\r\n        transition: opacity 0.3s;\r\n        @media (min-width: 70rem) {\r\n            grid-template-areas: \"left rigth\";\r\n            grid-template-rows: 100%;\r\n        }\r\n    }\r\n\r\n    &__backName {\r\n        position: absolute;\r\n\r\n        z-index: -1;\r\n        left: -20%;\r\n        font-weight: bold;\r\n        color: $clr-text2;\r\n        top: 50%;\r\n        transform: translateY(-50%);\r\n        text-transform: uppercase;\r\n        @media (min-width: 70rem) {\r\n            font-size: 17rem;\r\n        }\r\n    }\r\n\r\n    &__column {\r\n        &.flex {\r\n            display: flex;\r\n            justify-content: center;\r\n            flex-direction: column;\r\n\r\n            @media (min-width: 70rem) {\r\n            }\r\n        }\r\n        &:last-of-type {\r\n            grid-area: rigth;\r\n        }\r\n\r\n        height: 100%;\r\n        img {\r\n            position: relative;\r\n            top: 0%;\r\n            bottom: 0;\r\n            max-width: 100%;\r\n            max-height: 100%;\r\n            filter: drop-shadow(1rem 1rem 4.75rem rgba(0, 0, 0, 0.7));\r\n\r\n            animation-name: productDisAppear;\r\n\r\n            animation-duration: 1.5s;\r\n        }\r\n    }\r\n\r\n    &__productName {\r\n        font-weight: 700;\r\n\r\n        @media (min-width: 70rem) {\r\n            @include fontSize(75, 70.4rem, 80, 50em);\r\n        }\r\n\r\n        @media (min-width: 112.5rem) {\r\n            font-size: 4.6875rem;\r\n        }\r\n    }\r\n\r\n    &__price {\r\n        font-family: Cabin;\r\n\r\n        @media (min-width: 70rem) {\r\n            @include fontSize(35, 28rem, 40);\r\n        }\r\n\r\n        @media (min-width: 112.5rem) {\r\n            font-size: 2.1875rem;\r\n        }\r\n    }\r\n\r\n    &__prevPrice {\r\n        color: $clr-text;\r\n        text-decoration: line-through;\r\n        margin-right: 1.14em;\r\n    }\r\n\r\n    &__curentPrice {\r\n        color: $clr-blue;\r\n    }\r\n}\r\n\r\n.hero__slide.active {\r\n    opacity: 1;\r\n\r\n    img {\r\n        animation-name: productAppear;\r\n        animation-duration: 1.5s;\r\n    }\r\n\r\n    .hero__productName {\r\n        animation-name: productNameAppear;\r\n        animation-duration: 1s;\r\n    }\r\n\r\n    .hero__backName {\r\n        animation-name: backNameSlideInLeft;\r\n        animation-duration: 1.5s;\r\n    }\r\n\r\n    .hero__price {\r\n        animation-name: priceAppear;\r\n        animation-duration: 2.4s;\r\n    }\r\n}\r\n\r\n@keyframes productAppear {\r\n    from {\r\n        opacity: 0;\r\n        left: 3rem;\r\n    }\r\n    to {\r\n        opacity: 1;\r\n        left: 0;\r\n    }\r\n}\r\n\r\n@keyframes productNameAppear {\r\n    0% {\r\n        transform: translateY(-100px);\r\n        opacity: 0;\r\n    }\r\n    100% {\r\n        transform: translateY(0);\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n@keyframes backNameSlideInLeft {\r\n    0% {\r\n        transform: translate3d(-100%, -50%, 0);\r\n        visibility: visible;\r\n    }\r\n    100% {\r\n        transform: translate3d(0, -50%, 0);\r\n    }\r\n}\r\n\r\n@keyframes priceAppear {\r\n    0% {\r\n        opacity: 0;\r\n    }\r\n    100% {\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n@keyframes productDisAppear {\r\n    from {\r\n        opacity: 1;\r\n        left: 0;\r\n    }\r\n    to {\r\n        opacity: 0;\r\n        left: -2rem;\r\n    }\r\n}\r\n"]}
 @font-face {
   font-family: "Cabin";
   src: url("font/Cabin-Regular.eot");
@@ -202,14 +201,226 @@ body {
   color: white;
 }
 
-.hero p:first-of-type {
-  font-family: "Cabin";
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 20rem;
+.grid-16 {
+  max-width: 112.5rem;
+  margin: auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  padding: 0 2rem;
+  font-family: Gotham;
+}
+@media (min-width: 70rem) {
+  .grid-16 {
+    column-gap: 1.5rem;
+  }
 }
 
-.hero p:last-of-type {
-  font-family: Gotham;
+.hero {
+  overflow: hidden;
+}
+.hero__chevrons {
+  grid-column: 12;
+  grid-row: 3/span 2;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(2.78125rem + 0.390625vw);
+  line-height: 1.2;
+  margin-bottom: 0;
+  justify-content: flex-end;
+  color: #72748e;
+}
+@media (min-width: 70rem) {
+  .hero__chevrons {
+    grid-row: 4/span 2;
+    justify-content: center;
+    align-self: center;
+  }
+}
+.hero__chevrons .fa-solid {
+  cursor: pointer;
+  transition: color 0.3s;
+  margin-bottom: 0.44em;
+}
+@media (min-width: 70rem) {
+  .hero__chevrons .fa-solid {
+    margin-bottom: 1.4em;
+  }
+}
+.hero__chevrons .fa-solid:hover {
+  color: #b9b9c4;
+}
+.hero__chevrons .fa-solid:last-of-type {
+  margin-bottom: 0;
+}
+.hero__slider {
+  grid-column: 1/span 11;
+  grid-row: 2/span 4;
+  margin: 0;
+  position: relative;
+}
+@media (min-width: 70rem) {
+  .hero__slider {
+    grid-column: 3/span 9;
+  }
+}
+.hero__slide {
+  position: absolute;
+  opacity: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "left " "rigth ";
+  grid-template-rows: max-content 1fr;
+  padding: 1rem 0;
+  transition: opacity 0.3s;
+}
+@media (min-width: 70rem) {
+  .hero__slide {
+    grid-template-areas: "left rigth";
+    grid-template-rows: 100%;
+  }
+}
+.hero__backName {
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  font-weight: bold;
+  color: rgba(114, 116, 142, 0.1529411765);
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+@media (min-width: 70rem) {
+  .hero__backName {
+    font-size: 17rem;
+  }
+}
+.hero__column {
+  height: 100%;
+}
+.hero__column.flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero__column:last-of-type {
+  grid-area: rigth;
+}
+.hero__column img {
+  position: relative;
+  top: 0%;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+  filter: drop-shadow(1rem 1rem 4.75rem rgba(0, 0, 0, 0.7));
+  animation-name: productDisAppear;
+  animation-duration: 1.5s;
+}
+.hero__productName {
+  font-weight: 700;
+}
+@media (min-width: 70rem) {
+  .hero__productName {
+    font-size: calc(4.4rem + 0.390625vw);
+    line-height: 1.0666666667;
+    margin-bottom: 0.6666666667em;
+  }
+}
+@media (min-width: 112.5rem) {
+  .hero__productName {
+    font-size: 4.6875rem;
+  }
+}
+.hero__price {
+  font-family: Cabin;
+}
+@media (min-width: 70rem) {
+  .hero__price {
+    font-size: calc(1.75rem + 0.390625vw);
+    line-height: 1.1428571429;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 112.5rem) {
+  .hero__price {
+    font-size: 2.1875rem;
+  }
+}
+.hero__prevPrice {
+  color: #72748e;
+  text-decoration: line-through;
+  margin-right: 1.14em;
+}
+.hero__curentPrice {
+  color: #676eff;
+}
+
+.hero__slide.active {
+  opacity: 1;
+}
+.hero__slide.active img {
+  animation-name: productAppear;
+  animation-duration: 1.5s;
+}
+.hero__slide.active .hero__productName {
+  animation-name: productNameAppear;
+  animation-duration: 1s;
+}
+.hero__slide.active .hero__backName {
+  animation-name: backNameSlideInLeft;
+  animation-duration: 1.5s;
+}
+.hero__slide.active .hero__price {
+  animation-name: priceAppear;
+  animation-duration: 2.4s;
+}
+
+@keyframes productAppear {
+  from {
+    opacity: 0;
+    left: 3rem;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes productNameAppear {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes backNameSlideInLeft {
+  0% {
+    transform: translate3d(-100%, -50%, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+@keyframes priceAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes productDisAppear {
+  from {
+    opacity: 1;
+    left: 0;
+  }
+  to {
+    opacity: 0;
+    left: -2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

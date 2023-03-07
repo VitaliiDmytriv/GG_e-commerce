@@ -4,20 +4,73 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
         <link rel="stylesheet" href="main.css" />
         <title>Document</title>
     </head>
     <body>
         <main>
             <section class="hero">
-                <p>Mouse</p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero natus sed dolorum?
-                </p>
+                <div class="grid-16">
+                    <div class="hero__chevrons">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="hero__slider">
+                        <div class="hero__wrapper">
+                            <article class="hero__slide active">
+                                <div class="hero__backName">Mouse</div>
+                                <div class="hero__column flex">
+                                    <h2 class="hero__productName">
+                                        Mouse &#8212; Steelseries Sensei 310
+                                    </h2>
+                                    <div class="hero__price">
+                                        <span class="hero__prevPrice"
+                                            >$ 199,
+                                        </span>
+                                        <span class="hero__curentPrice"
+                                            >$ <span>100</span>,-</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="hero__column">
+                                    <img src="img/mouse2.png" alt="" />
+                                </div>
+                            </article>
+                            <article class="hero__slide">
+                                <div class="hero__backName">Headset</div>
+                                <div class="hero__column flex">
+                                    <h2 class="hero__productName">
+                                        Headset &#8212; HyperX Cloud
+                                    </h2>
+                                    <div class="hero__price">
+                                        <span class="hero__prevPrice"
+                                            >$ 299,
+                                        </span>
+                                        <span class="hero__curentPrice"
+                                            >$ <span>200</span>,-</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="hero__column">
+                                    <img src="img/headset1.png" alt="" />
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
+        <script src="js/jquery-3.6.3.min.js"></script>
+        <script
+            src="https://kit.fontawesome.com/17c9b0bc37.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/app.js"></script>
     </body>
 </html>

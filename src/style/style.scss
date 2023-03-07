@@ -5,19 +5,260 @@ $clr-background: #23232f;
 $clr-white: #ffff;
 $clr-blue: #676eff;
 $clr-text: #72748e;
+$clr-text2: #72748e27;
+
+// (86*16) +  (24* 15) = 1736px
+
+$baseFZ: 16;
+$baseVW: 0.390625vw;
+
+@mixin fontSize($fz, $fluidFZ, $lineHeight, $marginB: 0) {
+    font-size: calc($fluidFZ / $baseFZ + $baseVW);
+    line-height: calc($lineHeight / $fz);
+    margin-bottom: calc($marginB / $fz);
+}
+
+// =======================================================
 
 body {
     background-color: $clr-background;
     color: $clr-white;
 }
 
-.hero p:first-of-type {
-    font-family: "Cabin";
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 20rem;
+.grid-16 {
+    max-width: 112.5rem;
+    margin: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    padding: 0 2rem;
+
+    font-family: Gotham;
+    @media (min-width: 70rem) {
+        column-gap: 1.5rem;
+    }
 }
 
-.hero p:last-of-type {
-    font-family: Gotham;
+.hero {
+    overflow: hidden;
+
+    // slider-chevrons ============
+
+    &__chevrons {
+        grid-column: 12;
+        grid-row: 3 / span 2;
+        display: flex;
+        flex-direction: column;
+        @include fontSize(50, 44.5rem, 60);
+        justify-content: flex-end;
+
+        color: $clr-text;
+
+        @media (min-width: 70rem) {
+            grid-row: 4 / span 2;
+            justify-content: center;
+            align-self: center;
+        }
+
+        .fa-solid {
+            cursor: pointer;
+            transition: color 0.3s;
+            margin-bottom: 0.44em;
+
+            @media (min-width: 70rem) {
+                margin-bottom: 1.4em;
+            }
+
+            &:hover {
+                color: #b9b9c4;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    // slider =====================
+
+    &__slider {
+        grid-column: 1 / span 11;
+        grid-row: 2 / span 4;
+        margin: 0;
+        position: relative;
+
+        @media (min-width: 70rem) {
+            grid-column: 3 / span 9;
+        }
+    }
+
+    &__slide {
+        position: absolute;
+        opacity: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "left " "rigth ";
+        grid-template-rows: max-content 1fr;
+        padding: 1rem 0;
+        transition: opacity 0.3s;
+        @media (min-width: 70rem) {
+            grid-template-areas: "left rigth";
+            grid-template-rows: 100%;
+        }
+    }
+
+    &__backName {
+        position: absolute;
+
+        z-index: -1;
+        left: -20%;
+        font-weight: bold;
+        color: $clr-text2;
+        top: 50%;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+        @media (min-width: 70rem) {
+            font-size: 17rem;
+        }
+    }
+
+    &__column {
+        &.flex {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            @media (min-width: 70rem) {
+            }
+        }
+        &:last-of-type {
+            grid-area: rigth;
+        }
+
+        height: 100%;
+        img {
+            position: relative;
+            top: 0%;
+            bottom: 0;
+            max-width: 100%;
+            max-height: 100%;
+            filter: drop-shadow(1rem 1rem 4.75rem rgba(0, 0, 0, 0.7));
+
+            animation-name: productDisAppear;
+
+            animation-duration: 1.5s;
+        }
+    }
+
+    &__productName {
+        font-weight: 700;
+
+        @media (min-width: 70rem) {
+            @include fontSize(75, 70.4rem, 80, 50em);
+        }
+
+        @media (min-width: 112.5rem) {
+            font-size: 4.6875rem;
+        }
+    }
+
+    &__price {
+        font-family: Cabin;
+
+        @media (min-width: 70rem) {
+            @include fontSize(35, 28rem, 40);
+        }
+
+        @media (min-width: 112.5rem) {
+            font-size: 2.1875rem;
+        }
+    }
+
+    &__prevPrice {
+        color: $clr-text;
+        text-decoration: line-through;
+        margin-right: 1.14em;
+    }
+
+    &__curentPrice {
+        color: $clr-blue;
+    }
+}
+
+.hero__slide.active {
+    opacity: 1;
+
+    img {
+        animation-name: productAppear;
+        animation-duration: 1.5s;
+    }
+
+    .hero__productName {
+        animation-name: productNameAppear;
+        animation-duration: 1s;
+    }
+
+    .hero__backName {
+        animation-name: backNameSlideInLeft;
+        animation-duration: 1.5s;
+    }
+
+    .hero__price {
+        animation-name: priceAppear;
+        animation-duration: 2.4s;
+    }
+}
+
+@keyframes productAppear {
+    from {
+        opacity: 0;
+        left: 3rem;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes productNameAppear {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes backNameSlideInLeft {
+    0% {
+        transform: translate3d(-100%, -50%, 0);
+        visibility: visible;
+    }
+    100% {
+        transform: translate3d(0, -50%, 0);
+    }
+}
+
+@keyframes priceAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes productDisAppear {
+    from {
+        opacity: 1;
+        left: 0;
+    }
+    to {
+        opacity: 0;
+        left: -2rem;
+    }
 }
