@@ -10,7 +10,7 @@ $clr-text2: #72748e27;
 // (86*16) +  (24* 15) = 1736px
 
 $baseFZ: 16;
-$baseVW: 0.390625vw;
+$baseVW: 0.490625vw;
 
 @mixin fontSize($fz, $fluidFZ, $lineHeight, $marginB: 0) {
     font-size: calc($fluidFZ / $baseFZ + $baseVW);
@@ -25,161 +25,130 @@ body {
     color: $clr-white;
 }
 
-.grid-16 {
-    max-width: 112.5rem;
-    margin: auto;
-    min-height: 100vh;
+// grid template ==================
+
+.grid-12 {
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-
-    padding: 0 2rem;
-
-    font-family: Gotham;
-    @media (min-width: 70rem) {
-        column-gap: 1.5rem;
-    }
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 1rem;
 }
 
+// Hero section ===================
+
 .hero {
-    overflow: hidden;
+    overflow-x: hidden;
+    font-family: Gotham;
 
     // slider-chevrons ============
 
     &__chevrons {
         grid-column: 12;
-        grid-row: 3 / span 2;
+        grid-row: 5 / span 2;
         display: flex;
         flex-direction: column;
-        @include fontSize(50, 44.5rem, 60);
-        justify-content: flex-end;
-
-        color: $clr-text;
-
-        @media (min-width: 70rem) {
-            grid-row: 4 / span 2;
-            justify-content: center;
-            align-self: center;
-        }
+        align-self: center;
+        align-items: center;
 
         .fa-solid {
-            cursor: pointer;
-            transition: color 0.3s;
-            margin-bottom: 0.44em;
-
-            @media (min-width: 70rem) {
-                margin-bottom: 1.4em;
-            }
-
-            &:hover {
-                color: #b9b9c4;
-            }
-
-            &:last-of-type {
-                margin-bottom: 0;
-            }
+            @include fontSize(25, 20.4rem, 30);
+            margin-bottom: 1em;
         }
     }
 
-    // slider =====================
+    // Add to Cart ===============
+
+    &__add {
+        position: absolute;
+        bottom: -2rem;
+    }
+
+    &__addCircle {
+        width: 1.875rem;
+        height: 1.875rem;
+        border: 1px solid $clr-blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        display: inline-flex;
+    }
+
+    &__addText {
+        display: inline-block;
+    }
+
+    // slider section =============
 
     &__slider {
-        grid-column: 1 / span 11;
         grid-row: 2 / span 4;
-        margin: 0;
+        grid-column: 1 / span 11;
         position: relative;
-
-        @media (min-width: 70rem) {
-            grid-column: 3 / span 9;
-        }
     }
+
+    // Single slide ===============
 
     &__slide {
         position: absolute;
+        left: 0;
+        right: 0;
         opacity: 0;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "left " "rigth ";
-        grid-template-rows: max-content 1fr;
-        padding: 1rem 0;
-        transition: opacity 0.3s;
-        @media (min-width: 70rem) {
-            grid-template-areas: "left rigth";
-            grid-template-rows: 100%;
-        }
+        grid-template-rows: 0.5fr 1fr;
+        row-gap: 0.625rem;
     }
+
+    // category name back =========
 
     &__backName {
         position: absolute;
-
         z-index: -1;
-        left: -20%;
-        font-weight: bold;
-        color: $clr-text2;
-        top: 50%;
+        left: -2rem;
+        top: 45%;
         transform: translateY(-50%);
+
+        color: #72748e9a;
+        font-size: calc(5rem + 1vw);
+        font-weight: 700;
         text-transform: uppercase;
-        @media (min-width: 70rem) {
-            font-size: 17rem;
-        }
+    }
+
+    // columns ====================
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     &__column {
-        &.flex {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-
-            @media (min-width: 70rem) {
-            }
-        }
-        &:last-of-type {
-            grid-area: rigth;
-        }
-
-        height: 100%;
+        align-self: center;
         img {
             position: relative;
-            top: 0%;
-            bottom: 0;
             max-width: 100%;
             max-height: 100%;
-            filter: drop-shadow(1rem 1rem 4.75rem rgba(0, 0, 0, 0.7));
-
-            animation-name: productDisAppear;
-
-            animation-duration: 1.5s;
+            // filter: drop-shadow(1rem 1rem 4.75rem rgba(0, 0, 0, 0.6));
         }
     }
 
+    // Name and price of prod ====
+
     &__productName {
         font-weight: 700;
-
-        @media (min-width: 70rem) {
-            @include fontSize(75, 70.4rem, 80, 50em);
-        }
-
-        @media (min-width: 112.5rem) {
-            font-size: 4.6875rem;
-        }
+        @include fontSize(30, 25.4rem, 40, 25em);
     }
 
     &__price {
         font-family: Cabin;
-
-        @media (min-width: 70rem) {
-            @include fontSize(35, 28rem, 40);
-        }
-
-        @media (min-width: 112.5rem) {
-            font-size: 2.1875rem;
-        }
+        @include fontSize(25, 19.4rem, 40);
     }
 
     &__prevPrice {
         color: $clr-text;
         text-decoration: line-through;
-        margin-right: 1.14em;
+        margin-right: 1em;
     }
 
     &__curentPrice {
@@ -208,6 +177,13 @@ body {
     .hero__price {
         animation-name: priceAppear;
         animation-duration: 2.4s;
+    }
+
+    .hero__add {
+        overflow: hidden;
+        white-space: nowrap;
+        animation-name: write;
+        animation-duration: 2s;
     }
 }
 
@@ -249,6 +225,20 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes write {
+    0% {
+        // transform: translateY(50%);
+        opacity: 0;
+
+        width: 0px;
+    }
+    100% {
+        // transform: translateY(0);
+        opacity: 1;
+        width: 100%;
     }
 }
 

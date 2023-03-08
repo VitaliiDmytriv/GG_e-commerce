@@ -147,7 +147,7 @@ h6 {
 
 /*# sourceMappingURL=responsiveFont.css.map */
 
-{"version":3,"sources":["font.scss","style.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAKJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;ACjDJ;EACI,kBApBa;EAqBb,OApBQ;;;AAuBZ;EACI;EACA;EACA;EACA;EACA;EACA;EAEA;EAEA;;AACA;EAXJ;IAYQ;;;;AAIR;EACI;;AAIA;EACI;EACA;EACA;EACA;EArCJ;EACA;EACA;EAqCI;EAEA,OAlDG;;AAoDH;EAVJ;IAWQ;IACA;IACA;;;AAGJ;EACI;EACA;EACA;;AAEA;EALJ;IAMQ;;;AAGJ;EACI;;AAGJ;EACI;;AAOZ;EACI;EACA;EACA;EACA;;AAEA;EANJ;IAOQ;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EATJ;IAUQ;IACA;;;AAIR;EACI;EAEA;EACA;EACA;EACA,OA9GI;EA+GJ;EACA;EACA;;AACA;EAVJ;IAWQ;;;AAIR;EAaI;;AAZA;EACI;EACA;EACA;;AAKJ;EACI;;AAIJ;EACI;EACA;EACA;EACA;EACA;EACA;EAEA;EAEA;;AAIR;EACI;;AAEA;EAHJ;IA3IA;IACA;IACA;;;AAgJI;EAPJ;IAQQ;;;AAIR;EACI;;AAEA;EAHJ;IAvJA;IACA;IACA;;;AA4JI;EAPJ;IAQQ;;;AAIR;EACI,OA7KG;EA8KH;EACA;;AAGJ;EACI,OApLG;;;AAwLX;EACI;;AAEA;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;;AAIR;EACI;IACI;IACA;;EAEJ;IACI;IACA;;;AAIR;EACI;IACI;IACA;;EAEJ;IACI;IACA;;;AAIR;EACI;IACI;IACA;;EAEJ;IACI;;;AAIR;EACI;IACI;;EAEJ;IACI;;;AAIR;EACI;IACI;IACA;;EAEJ;IACI;IACA","file":"style.css","sourcesContent":["@font-face {\r\n    font-family: \"Cabin\";\r\n    src: url(\"font/Cabin-Regular.eot\");\r\n    src: url(\"font/Cabin-Regular.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Cabin-Regular.woff2\") format(\"woff2\"),\r\n        url(\"font/Cabin-Regular.woff\") format(\"woff\"),\r\n        url(\"font/Cabin-Regular.ttf\") format(\"truetype\");\r\n    font-weight: normal;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Cabin\";\r\n    src: url(\"font/Cabin-Medium.eot\");\r\n    src: url(\"font/Cabin-Medium.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Cabin-Medium.woff2\") format(\"woff2\"),\r\n        url(\"font/Cabin-Medium.woff\") format(\"woff\"),\r\n        url(\"font/Cabin-Medium.ttf\") format(\"truetype\");\r\n    font-weight: 500;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Cabin\";\r\n    src: url(\"font/Cabin-Bold.eot\");\r\n    src: url(\"font/Cabin-Bold.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Cabin-Bold.woff2\") format(\"woff2\"),\r\n        url(\"font/Cabin-Bold.woff\") format(\"woff\"),\r\n        url(\"font/Cabin-Bold.ttf\") format(\"truetype\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n// =====================================================================\r\n\r\n@font-face {\r\n    font-family: \"Gotham\";\r\n    src: url(\"font/Gotham-Book.eot\");\r\n    src: url(\"font/Gotham-Book.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Gotham-Book.woff2\") format(\"woff2\"),\r\n        url(\"font/Gotham-Book.woff\") format(\"woff\"),\r\n        url(\"font/Gotham-Book.ttf\") format(\"truetype\");\r\n    font-weight: normal;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Gotham\";\r\n    src: url(\"font/Gotham-Medium.eot\");\r\n    src: url(\"font/Gotham-Medium.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Gotham-Medium.woff2\") format(\"woff2\"),\r\n        url(\"font/Gotham-Medium.woff\") format(\"woff\"),\r\n        url(\"font/Gotham-Medium.ttf\") format(\"truetype\");\r\n    font-weight: 500;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Gotham\";\r\n    src: url(\"font/Gotham-Bold.eot\");\r\n    src: url(\"font/Gotham-Bold.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Gotham-Bold.woff2\") format(\"woff2\"),\r\n        url(\"font/Gotham-Bold.woff\") format(\"woff\"),\r\n        url(\"font/Gotham-Bold.ttf\") format(\"truetype\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n","@import \"font.scss\";\r\n\r\n// Variables ======================\r\n$clr-background: #23232f;\r\n$clr-white: #ffff;\r\n$clr-blue: #676eff;\r\n$clr-text: #72748e;\r\n$clr-text2: #72748e27;\r\n\r\n// (86*16) +  (24* 15) = 1736px\r\n\r\n$baseFZ: 16;\r\n$baseVW: 0.390625vw;\r\n\r\n@mixin fontSize($fz, $fluidFZ, $lineHeight, $marginB: 0) {\r\n    font-size: calc($fluidFZ / $baseFZ + $baseVW);\r\n    line-height: calc($lineHeight / $fz);\r\n    margin-bottom: calc($marginB / $fz);\r\n}\r\n\r\n// =======================================================\r\n\r\nbody {\r\n    background-color: $clr-background;\r\n    color: $clr-white;\r\n}\r\n\r\n.grid-16 {\r\n    max-width: 112.5rem;\r\n    margin: auto;\r\n    min-height: 100vh;\r\n    display: grid;\r\n    grid-template-columns: repeat(12, 1fr);\r\n    grid-template-rows: repeat(6, 1fr);\r\n\r\n    padding: 0 2rem;\r\n\r\n    font-family: Gotham;\r\n    @media (min-width: 70rem) {\r\n        column-gap: 1.5rem;\r\n    }\r\n}\r\n\r\n.hero {\r\n    overflow: hidden;\r\n\r\n    // slider-chevrons ============\r\n\r\n    &__chevrons {\r\n        grid-column: 12;\r\n        grid-row: 3 / span 2;\r\n        display: flex;\r\n        flex-direction: column;\r\n        @include fontSize(50, 44.5rem, 60);\r\n        justify-content: flex-end;\r\n\r\n        color: $clr-text;\r\n\r\n        @media (min-width: 70rem) {\r\n            grid-row: 4 / span 2;\r\n            justify-content: center;\r\n            align-self: center;\r\n        }\r\n\r\n        .fa-solid {\r\n            cursor: pointer;\r\n            transition: color 0.3s;\r\n            margin-bottom: 0.44em;\r\n\r\n            @media (min-width: 70rem) {\r\n                margin-bottom: 1.4em;\r\n            }\r\n\r\n            &:hover {\r\n                color: #b9b9c4;\r\n            }\r\n\r\n            &:last-of-type {\r\n                margin-bottom: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n    // slider =====================\r\n\r\n    &__slider {\r\n        grid-column: 1 / span 11;\r\n        grid-row: 2 / span 4;\r\n        margin: 0;\r\n        position: relative;\r\n\r\n        @media (min-width: 70rem) {\r\n            grid-column: 3 / span 9;\r\n        }\r\n    }\r\n\r\n    &__slide {\r\n        position: absolute;\r\n        opacity: 0;\r\n        display: grid;\r\n        grid-template-columns: 1fr;\r\n        grid-template-areas: \"left \" \"rigth \";\r\n        grid-template-rows: max-content 1fr;\r\n        padding: 1rem 0;\r\n        transition: opacity 0.3s;\r\n        @media (min-width: 70rem) {\r\n            grid-template-areas: \"left rigth\";\r\n            grid-template-rows: 100%;\r\n        }\r\n    }\r\n\r\n    &__backName {\r\n        position: absolute;\r\n\r\n        z-index: -1;\r\n        left: -20%;\r\n        font-weight: bold;\r\n        color: $clr-text2;\r\n        top: 50%;\r\n        transform: translateY(-50%);\r\n        text-transform: uppercase;\r\n        @media (min-width: 70rem) {\r\n            font-size: 17rem;\r\n        }\r\n    }\r\n\r\n    &__column {\r\n        &.flex {\r\n            display: flex;\r\n            justify-content: center;\r\n            flex-direction: column;\r\n\r\n            @media (min-width: 70rem) {\r\n            }\r\n        }\r\n        &:last-of-type {\r\n            grid-area: rigth;\r\n        }\r\n\r\n        height: 100%;\r\n        img {\r\n            position: relative;\r\n            top: 0%;\r\n            bottom: 0;\r\n            max-width: 100%;\r\n            max-height: 100%;\r\n            filter: drop-shadow(1rem 1rem 4.75rem rgba(0, 0, 0, 0.7));\r\n\r\n            animation-name: productDisAppear;\r\n\r\n            animation-duration: 1.5s;\r\n        }\r\n    }\r\n\r\n    &__productName {\r\n        font-weight: 700;\r\n\r\n        @media (min-width: 70rem) {\r\n            @include fontSize(75, 70.4rem, 80, 50em);\r\n        }\r\n\r\n        @media (min-width: 112.5rem) {\r\n            font-size: 4.6875rem;\r\n        }\r\n    }\r\n\r\n    &__price {\r\n        font-family: Cabin;\r\n\r\n        @media (min-width: 70rem) {\r\n            @include fontSize(35, 28rem, 40);\r\n        }\r\n\r\n        @media (min-width: 112.5rem) {\r\n            font-size: 2.1875rem;\r\n        }\r\n    }\r\n\r\n    &__prevPrice {\r\n        color: $clr-text;\r\n        text-decoration: line-through;\r\n        margin-right: 1.14em;\r\n    }\r\n\r\n    &__curentPrice {\r\n        color: $clr-blue;\r\n    }\r\n}\r\n\r\n.hero__slide.active {\r\n    opacity: 1;\r\n\r\n    img {\r\n        animation-name: productAppear;\r\n        animation-duration: 1.5s;\r\n    }\r\n\r\n    .hero__productName {\r\n        animation-name: productNameAppear;\r\n        animation-duration: 1s;\r\n    }\r\n\r\n    .hero__backName {\r\n        animation-name: backNameSlideInLeft;\r\n        animation-duration: 1.5s;\r\n    }\r\n\r\n    .hero__price {\r\n        animation-name: priceAppear;\r\n        animation-duration: 2.4s;\r\n    }\r\n}\r\n\r\n@keyframes productAppear {\r\n    from {\r\n        opacity: 0;\r\n        left: 3rem;\r\n    }\r\n    to {\r\n        opacity: 1;\r\n        left: 0;\r\n    }\r\n}\r\n\r\n@keyframes productNameAppear {\r\n    0% {\r\n        transform: translateY(-100px);\r\n        opacity: 0;\r\n    }\r\n    100% {\r\n        transform: translateY(0);\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n@keyframes backNameSlideInLeft {\r\n    0% {\r\n        transform: translate3d(-100%, -50%, 0);\r\n        visibility: visible;\r\n    }\r\n    100% {\r\n        transform: translate3d(0, -50%, 0);\r\n    }\r\n}\r\n\r\n@keyframes priceAppear {\r\n    0% {\r\n        opacity: 0;\r\n    }\r\n    100% {\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n@keyframes productDisAppear {\r\n    from {\r\n        opacity: 1;\r\n        left: 0;\r\n    }\r\n    to {\r\n        opacity: 0;\r\n        left: -2rem;\r\n    }\r\n}\r\n"]}
+{"version":3,"sources":["font.scss","style.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAKJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAIA;EACA;EACA;;ACjDJ;EACI,kBApBa;EAqBb,OApBQ;;;AAyBZ;EACI;EACA;EACA;EACA;EACA;;;AAKJ;EACI;EACA;;AAIA;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EAtCJ;EACA;EACA;EAsCQ;;AAMR;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;;AAKJ;EACI;EACA;EACA;;AAKJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAKJ;EACI;EACA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;;AAKJ;EACI;EACA;EACA;;AAGJ;EACI;;AACA;EACI;EACA;EACA;;AAOR;EACI;EA3HJ;EACA;EACA;;AA6HA;EACI;EAhIJ;EACA;EACA;;AAkIA;EACI,OA9IG;EA+IH;EACA;;AAGJ;EACI,OArJG;;;AAyJX;EACI;;AAEA;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;;;AAIR;EACI;IACI;IACA;;EAEJ;IACI;IACA;;;AAIR;EACI;IACI;IACA;;EAEJ;IACI;IACA;;;AAIR;EACI;IACI;IACA;;EAEJ;IACI;;;AAIR;EACI;IACI;;EAEJ;IACI;;;AAIR;EACI;IAEI;IAEA;;EAEJ;IAEI;IACA;;;AAIR;EACI;IACI;IACA;;EAEJ;IACI;IACA","file":"style.css","sourcesContent":["@font-face {\r\n    font-family: \"Cabin\";\r\n    src: url(\"font/Cabin-Regular.eot\");\r\n    src: url(\"font/Cabin-Regular.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Cabin-Regular.woff2\") format(\"woff2\"),\r\n        url(\"font/Cabin-Regular.woff\") format(\"woff\"),\r\n        url(\"font/Cabin-Regular.ttf\") format(\"truetype\");\r\n    font-weight: normal;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Cabin\";\r\n    src: url(\"font/Cabin-Medium.eot\");\r\n    src: url(\"font/Cabin-Medium.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Cabin-Medium.woff2\") format(\"woff2\"),\r\n        url(\"font/Cabin-Medium.woff\") format(\"woff\"),\r\n        url(\"font/Cabin-Medium.ttf\") format(\"truetype\");\r\n    font-weight: 500;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Cabin\";\r\n    src: url(\"font/Cabin-Bold.eot\");\r\n    src: url(\"font/Cabin-Bold.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Cabin-Bold.woff2\") format(\"woff2\"),\r\n        url(\"font/Cabin-Bold.woff\") format(\"woff\"),\r\n        url(\"font/Cabin-Bold.ttf\") format(\"truetype\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n// =====================================================================\r\n\r\n@font-face {\r\n    font-family: \"Gotham\";\r\n    src: url(\"font/Gotham-Book.eot\");\r\n    src: url(\"font/Gotham-Book.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Gotham-Book.woff2\") format(\"woff2\"),\r\n        url(\"font/Gotham-Book.woff\") format(\"woff\"),\r\n        url(\"font/Gotham-Book.ttf\") format(\"truetype\");\r\n    font-weight: normal;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Gotham\";\r\n    src: url(\"font/Gotham-Medium.eot\");\r\n    src: url(\"font/Gotham-Medium.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Gotham-Medium.woff2\") format(\"woff2\"),\r\n        url(\"font/Gotham-Medium.woff\") format(\"woff\"),\r\n        url(\"font/Gotham-Medium.ttf\") format(\"truetype\");\r\n    font-weight: 500;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"Gotham\";\r\n    src: url(\"font/Gotham-Bold.eot\");\r\n    src: url(\"font/Gotham-Bold.eot?#iefix\") format(\"embedded-opentype\"),\r\n        url(\"font/Gotham-Bold.woff2\") format(\"woff2\"),\r\n        url(\"font/Gotham-Bold.woff\") format(\"woff\"),\r\n        url(\"font/Gotham-Bold.ttf\") format(\"truetype\");\r\n    font-weight: 700;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}\r\n","@import \"font.scss\";\r\n\r\n// Variables ======================\r\n$clr-background: #23232f;\r\n$clr-white: #ffff;\r\n$clr-blue: #676eff;\r\n$clr-text: #72748e;\r\n$clr-text2: #72748e27;\r\n\r\n// (86*16) +  (24* 15) = 1736px\r\n\r\n$baseFZ: 16;\r\n$baseVW: 0.490625vw;\r\n\r\n@mixin fontSize($fz, $fluidFZ, $lineHeight, $marginB: 0) {\r\n    font-size: calc($fluidFZ / $baseFZ + $baseVW);\r\n    line-height: calc($lineHeight / $fz);\r\n    margin-bottom: calc($marginB / $fz);\r\n}\r\n\r\n// =======================================================\r\n\r\nbody {\r\n    background-color: $clr-background;\r\n    color: $clr-white;\r\n}\r\n\r\n// grid template ==================\r\n\r\n.grid-12 {\r\n    height: 100vh;\r\n    display: grid;\r\n    grid-template-columns: repeat(12, 1fr);\r\n    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;\r\n    margin: 0 1rem;\r\n}\r\n\r\n// Hero section ===================\r\n\r\n.hero {\r\n    overflow-x: hidden;\r\n    font-family: Gotham;\r\n\r\n    // slider-chevrons ============\r\n\r\n    &__chevrons {\r\n        grid-column: 12;\r\n        grid-row: 5 / span 2;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-self: center;\r\n        align-items: center;\r\n\r\n        .fa-solid {\r\n            @include fontSize(25, 20.4rem, 30);\r\n            margin-bottom: 1em;\r\n        }\r\n    }\r\n\r\n    // Add to Cart ===============\r\n\r\n    &__add {\r\n        position: absolute;\r\n        bottom: -2rem;\r\n    }\r\n\r\n    &__addCircle {\r\n        width: 1.875rem;\r\n        height: 1.875rem;\r\n        border: 1px solid $clr-blue;\r\n        display: flex;\r\n        align-items: center;\r\n        justify-content: center;\r\n        border-radius: 50%;\r\n        display: inline-flex;\r\n    }\r\n\r\n    &__addText {\r\n        display: inline-block;\r\n    }\r\n\r\n    // slider section =============\r\n\r\n    &__slider {\r\n        grid-row: 2 / span 4;\r\n        grid-column: 1 / span 11;\r\n        position: relative;\r\n    }\r\n\r\n    // Single slide ===============\r\n\r\n    &__slide {\r\n        position: absolute;\r\n        left: 0;\r\n        right: 0;\r\n        opacity: 0;\r\n        display: grid;\r\n        grid-template-columns: 1fr;\r\n        grid-template-rows: 0.5fr 1fr;\r\n        row-gap: 0.625rem;\r\n    }\r\n\r\n    // category name back =========\r\n\r\n    &__backName {\r\n        position: absolute;\r\n        z-index: -1;\r\n        left: -2rem;\r\n        top: 45%;\r\n        transform: translateY(-50%);\r\n\r\n        color: #72748e9a;\r\n        font-size: calc(5rem + 1vw);\r\n        font-weight: 700;\r\n        text-transform: uppercase;\r\n    }\r\n\r\n    // columns ====================\r\n\r\n    .flex {\r\n        display: flex;\r\n        justify-content: center;\r\n        flex-direction: column;\r\n    }\r\n\r\n    &__column {\r\n        align-self: center;\r\n        img {\r\n            position: relative;\r\n            max-width: 100%;\r\n            max-height: 100%;\r\n            // filter: drop-shadow(1rem 1rem 4.75rem rgba(0, 0, 0, 0.6));\r\n        }\r\n    }\r\n\r\n    // Name and price of prod ====\r\n\r\n    &__productName {\r\n        font-weight: 700;\r\n        @include fontSize(30, 25.4rem, 40, 25em);\r\n    }\r\n\r\n    &__price {\r\n        font-family: Cabin;\r\n        @include fontSize(25, 19.4rem, 40);\r\n    }\r\n\r\n    &__prevPrice {\r\n        color: $clr-text;\r\n        text-decoration: line-through;\r\n        margin-right: 1em;\r\n    }\r\n\r\n    &__curentPrice {\r\n        color: $clr-blue;\r\n    }\r\n}\r\n\r\n.hero__slide.active {\r\n    opacity: 1;\r\n\r\n    img {\r\n        animation-name: productAppear;\r\n        animation-duration: 1.5s;\r\n    }\r\n\r\n    .hero__productName {\r\n        animation-name: productNameAppear;\r\n        animation-duration: 1s;\r\n    }\r\n\r\n    .hero__backName {\r\n        animation-name: backNameSlideInLeft;\r\n        animation-duration: 1.5s;\r\n    }\r\n\r\n    .hero__price {\r\n        animation-name: priceAppear;\r\n        animation-duration: 2.4s;\r\n    }\r\n\r\n    .hero__add {\r\n        overflow: hidden;\r\n        white-space: nowrap;\r\n        animation-name: write;\r\n        animation-duration: 2s;\r\n    }\r\n}\r\n\r\n@keyframes productAppear {\r\n    from {\r\n        opacity: 0;\r\n        left: 3rem;\r\n    }\r\n    to {\r\n        opacity: 1;\r\n        left: 0;\r\n    }\r\n}\r\n\r\n@keyframes productNameAppear {\r\n    0% {\r\n        transform: translateY(-100px);\r\n        opacity: 0;\r\n    }\r\n    100% {\r\n        transform: translateY(0);\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n@keyframes backNameSlideInLeft {\r\n    0% {\r\n        transform: translate3d(-100%, -50%, 0);\r\n        visibility: visible;\r\n    }\r\n    100% {\r\n        transform: translate3d(0, -50%, 0);\r\n    }\r\n}\r\n\r\n@keyframes priceAppear {\r\n    0% {\r\n        opacity: 0;\r\n    }\r\n    100% {\r\n        opacity: 1;\r\n    }\r\n}\r\n\r\n@keyframes write {\r\n    0% {\r\n        // transform: translateY(50%);\r\n        opacity: 0;\r\n\r\n        width: 0px;\r\n    }\r\n    100% {\r\n        // transform: translateY(0);\r\n        opacity: 1;\r\n        width: 100%;\r\n    }\r\n}\r\n\r\n@keyframes productDisAppear {\r\n    from {\r\n        opacity: 1;\r\n        left: 0;\r\n    }\r\n    to {\r\n        opacity: 0;\r\n        left: -2rem;\r\n    }\r\n}\r\n"]}
 @font-face {
   font-family: "Cabin";
   src: url("font/Cabin-Regular.eot");
@@ -201,156 +201,104 @@ body {
   color: white;
 }
 
-.grid-16 {
-  max-width: 112.5rem;
-  margin: auto;
-  min-height: 100vh;
+.grid-12 {
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  padding: 0 2rem;
-  font-family: Gotham;
-}
-@media (min-width: 70rem) {
-  .grid-16 {
-    column-gap: 1.5rem;
-  }
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 1rem;
 }
 
 .hero {
-  overflow: hidden;
+  overflow-x: hidden;
+  font-family: Gotham;
 }
 .hero__chevrons {
   grid-column: 12;
-  grid-row: 3/span 2;
+  grid-row: 5/span 2;
   display: flex;
   flex-direction: column;
-  font-size: calc(2.78125rem + 0.390625vw);
-  line-height: 1.2;
-  margin-bottom: 0;
-  justify-content: flex-end;
-  color: #72748e;
-}
-@media (min-width: 70rem) {
-  .hero__chevrons {
-    grid-row: 4/span 2;
-    justify-content: center;
-    align-self: center;
-  }
+  align-self: center;
+  align-items: center;
 }
 .hero__chevrons .fa-solid {
-  cursor: pointer;
-  transition: color 0.3s;
-  margin-bottom: 0.44em;
-}
-@media (min-width: 70rem) {
-  .hero__chevrons .fa-solid {
-    margin-bottom: 1.4em;
-  }
-}
-.hero__chevrons .fa-solid:hover {
-  color: #b9b9c4;
-}
-.hero__chevrons .fa-solid:last-of-type {
+  font-size: calc(1.275rem + 0.490625vw);
+  line-height: 1.2;
   margin-bottom: 0;
+  margin-bottom: 1em;
+}
+.hero__add {
+  position: absolute;
+  bottom: -2rem;
+}
+.hero__addCircle {
+  width: 1.875rem;
+  height: 1.875rem;
+  border: 1px solid #676eff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  display: inline-flex;
+}
+.hero__addText {
+  display: inline-block;
 }
 .hero__slider {
-  grid-column: 1/span 11;
   grid-row: 2/span 4;
-  margin: 0;
+  grid-column: 1/span 11;
   position: relative;
-}
-@media (min-width: 70rem) {
-  .hero__slider {
-    grid-column: 3/span 9;
-  }
 }
 .hero__slide {
   position: absolute;
+  left: 0;
+  right: 0;
   opacity: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "left " "rigth ";
-  grid-template-rows: max-content 1fr;
-  padding: 1rem 0;
-  transition: opacity 0.3s;
-}
-@media (min-width: 70rem) {
-  .hero__slide {
-    grid-template-areas: "left rigth";
-    grid-template-rows: 100%;
-  }
+  grid-template-rows: 0.5fr 1fr;
+  row-gap: 0.625rem;
 }
 .hero__backName {
   position: absolute;
   z-index: -1;
-  left: -20%;
-  font-weight: bold;
-  color: rgba(114, 116, 142, 0.1529411765);
-  top: 50%;
+  left: -2rem;
+  top: 45%;
   transform: translateY(-50%);
+  color: rgba(114, 116, 142, 0.6039215686);
+  font-size: calc(5rem + 1vw);
+  font-weight: 700;
   text-transform: uppercase;
 }
-@media (min-width: 70rem) {
-  .hero__backName {
-    font-size: 17rem;
-  }
-}
-.hero__column {
-  height: 100%;
-}
-.hero__column.flex {
+.hero .flex {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.hero__column:last-of-type {
-  grid-area: rigth;
+.hero__column {
+  align-self: center;
 }
 .hero__column img {
   position: relative;
-  top: 0%;
-  bottom: 0;
   max-width: 100%;
   max-height: 100%;
-  filter: drop-shadow(1rem 1rem 4.75rem rgba(0, 0, 0, 0.7));
-  animation-name: productDisAppear;
-  animation-duration: 1.5s;
 }
 .hero__productName {
   font-weight: 700;
-}
-@media (min-width: 70rem) {
-  .hero__productName {
-    font-size: calc(4.4rem + 0.390625vw);
-    line-height: 1.0666666667;
-    margin-bottom: 0.6666666667em;
-  }
-}
-@media (min-width: 112.5rem) {
-  .hero__productName {
-    font-size: 4.6875rem;
-  }
+  font-size: calc(1.5875rem + 0.490625vw);
+  line-height: 1.3333333333;
+  margin-bottom: 0.8333333333em;
 }
 .hero__price {
   font-family: Cabin;
-}
-@media (min-width: 70rem) {
-  .hero__price {
-    font-size: calc(1.75rem + 0.390625vw);
-    line-height: 1.1428571429;
-    margin-bottom: 0;
-  }
-}
-@media (min-width: 112.5rem) {
-  .hero__price {
-    font-size: 2.1875rem;
-  }
+  font-size: calc(1.2125rem + 0.490625vw);
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 .hero__prevPrice {
   color: #72748e;
   text-decoration: line-through;
-  margin-right: 1.14em;
+  margin-right: 1em;
 }
 .hero__curentPrice {
   color: #676eff;
@@ -374,6 +322,12 @@ body {
 .hero__slide.active .hero__price {
   animation-name: priceAppear;
   animation-duration: 2.4s;
+}
+.hero__slide.active .hero__add {
+  overflow: hidden;
+  white-space: nowrap;
+  animation-name: write;
+  animation-duration: 2s;
 }
 
 @keyframes productAppear {
@@ -411,6 +365,16 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes write {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
   }
 }
 @keyframes productDisAppear {
