@@ -7,10 +7,15 @@ $clr-blue: #676eff;
 $clr-text: #72748e;
 $clr-text2: #72748e27;
 
+$break-556px: 34.75rem;
+$break-800px: 50rem;
+$break-968px: 60.5rem;
+$break-1300px: 81.25rem;
+
 // (86*16) +  (24* 15) = 1736px
 
 $baseFZ: 16;
-$baseVW: 0.390625vw;
+$baseVW: 0.490625vw;
 
 @mixin fontSize($fz, $fluidFZ, $lineHeight, $marginB: 0) {
     font-size: calc($fluidFZ / $baseFZ + $baseVW);
@@ -25,161 +30,323 @@ body {
     color: $clr-white;
 }
 
-.grid-16 {
-    max-width: 112.5rem;
-    margin: auto;
-    min-height: 100vh;
+// grid template ==================
+
+.grid-12 {
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-
-    padding: 0 2rem;
-
-    font-family: Gotham;
-    @media (min-width: 70rem) {
-        column-gap: 1.5rem;
-    }
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 1rem;
 }
 
+.circle {
+    width: 1.875rem;
+    height: 1.875rem;
+    border: 1px solid $clr-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    display: inline-flex;
+}
+
+.callToAction {
+    display: inline-block;
+    margin-left: 0.6em;
+    text-transform: uppercase;
+}
+
+// Hero section ===============================================
+
 .hero {
-    overflow: hidden;
+    overflow-x: hidden;
+    font-family: Gotham;
 
     // slider-chevrons ============
 
     &__chevrons {
         grid-column: 12;
-        grid-row: 3 / span 2;
+        grid-row: 5 / span 2;
         display: flex;
         flex-direction: column;
-        @include fontSize(50, 44.5rem, 60);
-        justify-content: flex-end;
+        align-self: center;
+        align-items: center;
 
-        color: $clr-text;
-
-        @media (min-width: 70rem) {
-            grid-row: 4 / span 2;
-            justify-content: center;
-            align-self: center;
+        @media (min-width: $break-556px) {
+            align-self: flex-start;
         }
 
         .fa-solid {
+            @include fontSize(25, 20.4rem, 30);
+            margin-bottom: 1em;
+            color: $clr-text;
             cursor: pointer;
             transition: color 0.3s;
-            margin-bottom: 0.44em;
-
-            @media (min-width: 70rem) {
-                margin-bottom: 1.4em;
-            }
 
             &:hover {
-                color: #b9b9c4;
+                color: $clr-white;
+            }
+
+            @media (min-width: $break-800px) {
+                @include fontSize(35, 30.4rem, 30, 40em);
+            }
+        }
+    }
+
+    // greeting hero ==============
+
+    &__greeting {
+        display: none;
+        text-transform: uppercase;
+        grid-row: 2/5;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        align-self: flex-end;
+        justify-self: center;
+        font-weight: 500;
+
+        @media (min-width: $break-1300px) {
+            display: block;
+        }
+    }
+
+    // moveDown btn ===============
+
+    &__moveDown {
+        display: none;
+        grid-column: 6;
+        grid-row: 6;
+        justify-self: center;
+        align-self: flex-end;
+        cursor: pointer;
+        color: $clr-text;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $clr-white;
+        }
+
+        @media (min-width: $break-1300px) {
+            display: block;
+            @include fontSize(35, 30.4rem, 30, 40em);
+        }
+    }
+
+    // Social =====================
+
+    &__social {
+        display: none;
+        grid-row: 5 / span 2;
+        align-self: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 0.5em;
+        @include fontSize(20, 15.4rem, 30);
+
+        .fa-brands {
+            margin-bottom: 1.36em;
+            cursor: pointer;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $clr-blue;
             }
 
             &:last-of-type {
                 margin-bottom: 0;
             }
         }
-    }
 
-    // slider =====================
-
-    &__slider {
-        grid-column: 1 / span 11;
-        grid-row: 2 / span 4;
-        margin: 0;
-        position: relative;
-
-        @media (min-width: 70rem) {
-            grid-column: 3 / span 9;
+        @media (min-width: $break-1300px) {
+            display: flex;
         }
     }
+
+    // Fraction ===================
+
+    &__fraction {
+        display: none;
+        position: relative;
+
+        justify-content: space-between;
+        grid-row: 6;
+        grid-column: 5 / span 4;
+        align-self: center;
+        @include fontSize(18, 14.4rem, 30);
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 3px;
+            width: 50%;
+            background-color: $clr-text;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media (min-height: 46.875rem) {
+            display: flex;
+        }
+
+        @media (min-width: $break-1300px) {
+            grid-column: 9 / span 3;
+            // align-self: flex-end;
+            // margin-bottom: 1rem;
+        }
+    }
+
+    &__curentSlide {
+        color: $clr-blue;
+    }
+
+    // slider section =============
+
+    &__slider {
+        grid-row: 2 / span 4;
+        grid-column: 1 / span 11;
+        position: relative;
+
+        @media (min-width: $break-1300px) {
+            grid-column: 2 / span 10;
+        }
+    }
+
+    // Single slide ===============
 
     &__slide {
         position: absolute;
+        left: 0;
+        right: 0;
         opacity: 0;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "left " "rigth ";
-        grid-template-rows: max-content 1fr;
-        padding: 1rem 0;
-        transition: opacity 0.3s;
-        @media (min-width: 70rem) {
-            grid-template-areas: "left rigth";
-            grid-template-rows: 100%;
+        grid-template-rows: 0.5fr 1fr;
+        row-gap: 0.625rem;
+
+        @media (min-width: $break-556px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
+
+    // Add to Cart ===============
+
+    &__add {
+        position: absolute;
+        z-index: 10;
+        bottom: -1rem;
+        cursor: pointer;
+
+        @media (min-width: $break-556px) {
+            bottom: -30%;
+        }
+
+        @media (min-width: $break-800px) {
+            bottom: 0;
+        }
+    }
+
+    &__addCircle {
+        @include fontSize(20, 14.4rem, 30);
+
+        @media (min-width: $break-556px) {
+            width: calc(1.5rem + 1.5vw);
+            height: calc(1.5rem + 1.5vw);
+            @include fontSize(22, 16.4rem, 30);
+        }
+    }
+
+    &__addText {
+        @include fontSize(18, 14.4rem, 30);
+    }
+
+    // back name category   =========
 
     &__backName {
         position: absolute;
-
         z-index: -1;
-        left: -20%;
-        font-weight: bold;
-        color: $clr-text2;
-        top: 50%;
+        left: -2rem;
+        top: 45%;
         transform: translateY(-50%);
+
+        color: #72748e59;
+        font-size: calc(5rem + 1vw);
+        font-weight: 700;
         text-transform: uppercase;
-        @media (min-width: 70rem) {
-            font-size: 17rem;
+
+        @media (min-width: $break-556px) {
+            top: -3rem;
+            font-size: calc(7rem + 1vw);
         }
+
+        @media (min-width: $break-968px) {
+            top: 50%;
+            font-size: calc(10rem + 1vw);
+        }
+
+        @media (min-width: $break-1300px) {
+            left: -14%;
+            font-size: calc(14rem + 1vw);
+        }
+    }
+
+    // columns ====================
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     &__column {
-        &.flex {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-
-            @media (min-width: 70rem) {
-            }
-        }
-        &:last-of-type {
-            grid-area: rigth;
-        }
-
-        height: 100%;
+        align-self: center;
         img {
             position: relative;
-            top: 0%;
-            bottom: 0;
             max-width: 100%;
             max-height: 100%;
-            filter: drop-shadow(1rem 1rem 4.75rem rgba(0, 0, 0, 0.7));
-
-            animation-name: productDisAppear;
-
-            animation-duration: 1.5s;
         }
     }
 
+    // Name and price of prod ====
+
     &__productName {
         font-weight: 700;
+        @include fontSize(30, 25.4rem, 40, 25em);
 
-        @media (min-width: 70rem) {
-            @include fontSize(75, 70.4rem, 80, 50em);
+        @media (min-width: $break-556px) {
+            @include fontSize(40, 35.4rem, 50, 35em);
         }
 
-        @media (min-width: 112.5rem) {
-            font-size: 4.6875rem;
+        @media (min-width: $break-968px) {
+            @include fontSize(55, 50.4rem, 60, 35em);
+        }
+
+        @media (min-width: $break-1300px) {
+            @include fontSize(65, 60.4rem, 80, 35em);
         }
     }
 
     &__price {
         font-family: Cabin;
+        @include fontSize(25, 19.4rem, 40);
 
-        @media (min-width: 70rem) {
-            @include fontSize(35, 28rem, 40);
+        @media (min-width: $break-556px) {
+            @include fontSize(30, 24.4rem, 40, 35em);
         }
 
-        @media (min-width: 112.5rem) {
-            font-size: 2.1875rem;
+        @media (min-width: $break-968px) {
+            @include fontSize(35, 30.4rem, 40, 35em);
         }
     }
 
     &__prevPrice {
         color: $clr-text;
         text-decoration: line-through;
-        margin-right: 1.14em;
+        margin-right: 1em;
     }
 
     &__curentPrice {
@@ -209,7 +376,16 @@ body {
         animation-name: priceAppear;
         animation-duration: 2.4s;
     }
+
+    .hero__add {
+        overflow: hidden;
+        white-space: nowrap;
+        animation-name: write;
+        animation-duration: 2.4s;
+    }
 }
+
+// Keyframes ======================
 
 @keyframes productAppear {
     from {
@@ -249,6 +425,20 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes write {
+    0% {
+        // transform: translateY(50%);
+        opacity: 0;
+
+        width: 0px;
+    }
+    100% {
+        // transform: translateY(0);
+        opacity: 1;
+        width: 100%;
     }
 }
 
