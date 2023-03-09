@@ -6,7 +6,6 @@ I'm gonna built website for purchasing!)
 
 ## Features
 
-- Light/dark mode toggle
 - Full responsive 
 - Cross platform
 
