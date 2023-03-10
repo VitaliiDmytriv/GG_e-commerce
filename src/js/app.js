@@ -55,4 +55,13 @@ $(document).ready(function () {
             }
         }
     });
+
+    // btnDown on hero section ============================
+    const btnDown = $(".hero__moveDown");
+    const target = $("#container");
+    $(btnDown).click(function (e) {
+        e.preventDefault();
+        const targetPosition = target.offset().top;
+        $("html, body").animate({ scrollTop: targetPosition }, 600);
+    });
 });
