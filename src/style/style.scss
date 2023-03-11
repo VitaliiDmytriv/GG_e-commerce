@@ -671,6 +671,7 @@ body {
     &__body {
         text-align: center;
         margin-top: calc(0.5rem + 1vw);
+        flex: 1;
     }
 
     &__name {

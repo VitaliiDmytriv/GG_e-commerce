@@ -105,4 +105,39 @@ $(document).ready(function () {
             prevEl: ".goLeft",
         },
     });
+
+    new Swiper(".row__slider2", {
+        breakpoints: {
+            // when window width is >= 320px
+            200: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            // // when window width is >= 480px
+            [width800px]: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            // // when window width is >= 640px
+            [width1300px]: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+        },
+        pagination: {
+            el: ".swiper-pagination2",
+            type: "fraction",
+
+            renderFraction: function (currentClass, totalClass) {
+                return `<div class="row__curentSlide2 curentSlide ${currentClass}"></div>
+                        <div class="row__AllSlides2 AllSlides ${totalClass}"></div>
+                `;
+            },
+        },
+
+        navigation: {
+            nextEl: ".goRigth2",
+            prevEl: ".goLeft2",
+        },
+    });
 });
