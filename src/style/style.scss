@@ -10,6 +10,7 @@ $clr-text2: #72748e27;
 $break-556px: 34.75rem;
 $break-800px: 50rem;
 $break-968px: 60.5rem;
+$break-1200px: 75rem;
 $break-1300px: 81.25rem;
 
 // (86*16) +  (24* 15) = 1736px
@@ -34,14 +35,145 @@ body {
 // grid template ==================
 
 .grid-12 {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 0 1rem;
 }
 
-// Add to cart btn ==================
+// Components ==========================================
+
+// Button add to cart, subscribe, browse
+
+.btn {
+    display: flex;
+    background-color: transparent;
+    border: 0;
+    color: $clr-white;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover .btn__circle {
+        background-color: $clr-blue;
+    }
+
+    &:hover .btn__text {
+        color: $clr-blue;
+    }
+
+    &__circle {
+        display: inline-flex;
+        border: 1px solid $clr-blue;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s;
+    }
+
+    &__circle--sm {
+        width: calc(1.1rem + 1vw);
+        height: calc(1.1rem + 1vw);
+
+        @media (min-width: $break-1300px) {
+            width: 1.875rem;
+            height: 1.875rem;
+        }
+
+        .fa-solid {
+            font-size: calc(0.5rem + $baseVW);
+
+            @media (min-width: $break-1300px) {
+                font-size: 0.9375rem;
+            }
+        }
+    }
+
+    &__circle--lg {
+        width: calc(1.4rem + 1vw);
+        height: calc(1.4rem + 1vw);
+
+        @media (min-width: $break-1300px) {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .fa-solid {
+            font-size: calc(0.8rem + $baseVW);
+
+            @media (min-width: $break-1300px) {
+                font-size: 1.35rem;
+            }
+        }
+    }
+
+    &__text {
+        text-transform: uppercase;
+        transition: color 0.3s;
+    }
+
+    &__text--sm {
+        font-size: calc(0.7rem + $baseVW);
+        margin-left: 0.5em;
+
+        @media (min-width: $break-556px) {
+            @include fontSize(20, 14.4rem, 30);
+        }
+
+        @media (min-width: $break-1200px) {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__text--lg {
+        font-size: calc(0.9rem + $baseVW);
+        margin-left: 0.5em;
+
+        @media (min-width: $break-556px) {
+            @include fontSize(24, 19.4rem, 35);
+        }
+
+        @media (min-width: $break-1200px) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// back name ====================
+
+.backBigTitle {
+    position: absolute;
+    z-index: -1;
+    color: #72748e1d;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &--sm {
+        @include fontSize(85, 80.5rem, 100);
+
+        @media (min-width: $break-556px) {
+            font-size: calc(7rem + 1vw);
+        }
+    }
+
+    &--lg {
+        font-size: calc(5rem + 1vw);
+
+        @media (min-width: $break-556px) {
+            font-size: calc(7rem + 1vw);
+        }
+
+        @media (min-width: $break-968px) {
+            font-size: calc(10rem + 1vw);
+        }
+
+        @media (min-width: $break-1300px) {
+            font-size: calc(14rem + 1vw);
+        }
+    }
+}
+
+// ==============================
 
 .titleSection {
     font-size: calc(1.275rem + 0.490625vw);
@@ -51,56 +183,6 @@ body {
 .small-txt {
     color: $clr-text;
     @include fontSize(16, 11.4rem, 20, 15em);
-}
-
-// ===========================
-
-.circle {
-    width: 1.875rem;
-    height: 1.875rem;
-    border: 1px solid $clr-blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    display: inline-flex;
-    cursor: pointer;
-}
-
-.callToAction {
-    display: inline-block;
-    margin-left: 0.6em;
-    text-transform: uppercase;
-}
-
-.sizeCircle-sm {
-    width: calc(1.1rem + 1vw);
-    height: calc(1.1rem + 1vw);
-
-    @media (min-width: $break-556px) {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
-    @media (min-width: $break-968px) {
-        width: 1.875rem;
-        height: 1.875rem;
-    }
-
-    .fa-plus {
-        font-size: calc(0.6rem + 1vw);
-
-        @media (min-width: $break-556px) {
-            font-size: 0.8rem;
-        }
-    }
-}
-
-.sizeText-sm {
-    font-size: calc(0.625rem + 0.5vw);
-    @media (min-width: $break-556px) {
-        @include fontSize(17, 12.9rem, 29);
-    }
 }
 
 // Fraction ==================
@@ -163,16 +245,6 @@ body {
     @media (min-width: $break-1300px) {
         display: block;
     }
-}
-
-// back name ====================
-
-.backName {
-    position: absolute;
-    z-index: -1;
-    color: #72748e1d;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 // curent price =================
@@ -311,9 +383,9 @@ body {
         }
     }
 
-    // Add to Cart ===============
+    // btn Add to Cart ===============
 
-    &__add {
+    &__btn {
         position: absolute;
         z-index: 10;
         bottom: -1rem;
@@ -328,41 +400,19 @@ body {
         }
     }
 
-    &__addCircle {
-        @include fontSize(20, 14.4rem, 30);
-
-        @media (min-width: $break-556px) {
-            width: calc(1.5rem + 1.5vw);
-            height: calc(1.5rem + 1.5vw);
-            @include fontSize(22, 16.4rem, 30);
-        }
-    }
-
-    &__addText {
-        @include fontSize(18, 14.4rem, 30);
-    }
-
     // back name category   =========
 
-    &__backName {
+    &__backBigTitle {
         left: -2rem;
         top: 45%;
         transform: translateY(-50%);
-        font-size: calc(5rem + 1vw);
-
-        @media (min-width: $break-556px) {
-            top: -3rem;
-            font-size: calc(7rem + 1vw);
-        }
 
         @media (min-width: $break-968px) {
             top: 50%;
-            font-size: calc(10rem + 1vw);
         }
 
         @media (min-width: $break-1300px) {
             left: -14%;
-            font-size: calc(14rem + 1vw);
         }
     }
 
@@ -439,7 +489,7 @@ body {
         animation-duration: 1s;
     }
 
-    .hero__backName {
+    .hero__backBigTitle {
         animation-name: backNameSlideInLeft;
         animation-duration: 1.5s;
     }
@@ -449,7 +499,7 @@ body {
         animation-duration: 2.4s;
     }
 
-    .hero__add {
+    .hero__btn {
         overflow: hidden;
         white-space: nowrap;
         animation-name: write;
@@ -459,10 +509,6 @@ body {
 
 // Category section ============================================
 
-// .category {
-//     // &__cart {
-//     // }
-// }
 .grid-2 {
     display: grid;
     grid-template-rows: 1fr;
@@ -472,6 +518,7 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 .cg-cart {
     border: 2px solid $clr-text;
     display: grid;
@@ -518,21 +565,13 @@ body {
         opacity: 0.1;
     }
 
-    &__backName {
+    &__backBigTitle {
         top: 47%;
-        @include fontSize(85, 80.5rem, 100);
-
-        @media (min-width: $break-556px) {
-            font-size: calc(7rem + 1vw);
-        }
     }
 
     &__titleBox {
         grid-row: 2;
     }
-
-    // &__title {
-    // }
 
     &__price {
         @include fontSize(25, 20.4rem, 35);
@@ -617,31 +656,21 @@ body {
         }
     }
 
-    &__action {
+    &__btn {
         grid-row: 1;
         grid-column: 6 / 13;
         align-self: center;
         justify-self: flex-end;
-        font-weight: 500;
 
         @media (min-width: $break-800px) {
             grid-column: 6 / 12;
         }
     }
 
-    &__backName {
+    &__backBigTitle {
         top: 50%;
         left: -3%;
         transform: translateY(-50%);
-        font-size: calc(4rem + 5vw);
-
-        @media (min-width: $break-556px) {
-            font-size: calc(7rem + 5vw);
-        }
-
-        @media (min-width: $break-800px) {
-            font-size: calc(10rem + 8vw);
-        }
     }
 
     &__vertTxt {
@@ -662,12 +691,6 @@ body {
             grid-column: 6/8;
         }
     }
-
-    // &__curentSlide {
-    // }
-
-    // &__AllSlides {
-    // }
 
     &__chevrons {
         grid-row: 5/7;
@@ -691,15 +714,9 @@ body {
         }
     }
 
-    // &__wrapper {
-    // }
-
     &__slide {
         display: flex;
     }
-
-    // &__card {
-    // }
 }
 
 .swiper-slide {
@@ -737,10 +754,9 @@ body {
         margin-top: 0.45em;
     }
 
-    &__addCircle {
-    }
-
-    &__addText {
+    &__btn {
+        justify-items: center;
+        justify-content: center;
     }
 }
 
@@ -814,19 +830,10 @@ body {
         }
     }
 
-    &__backName {
+    &__backBigTitle {
         top: 50%;
         left: -3%;
         transform: translateY(-50%);
-        font-size: calc(4rem + 5vw);
-
-        @media (min-width: $break-556px) {
-            font-size: calc(7rem + 5vw);
-        }
-
-        @media (min-width: $break-800px) {
-            font-size: calc(9rem + 7vw);
-        }
     }
 
     &__smallTxt {
@@ -861,7 +868,7 @@ body {
         @include fontSize(20, 13.4rem, 30);
         background-color: transparent;
         border-bottom: 1px solid $clr-text;
-        color: $clr-text;
+        color: $clr-blue;
 
         @media (min-width: $break-800px) {
             flex: 0.7;
@@ -946,13 +953,10 @@ body {
     0% {
         // transform: translateY(50%);
         opacity: 0;
-
-        width: 0px;
     }
     100% {
         // transform: translateY(0);
         opacity: 1;
-        width: 100%;
     }
 }
 

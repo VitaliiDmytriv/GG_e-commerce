@@ -111,7 +111,7 @@ $(document).ready(function () {
         speed: 700,
         breakpoints: {
             // when window width is >= 320px
-            200: {
+            350: {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },
