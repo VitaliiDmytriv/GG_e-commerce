@@ -95,8 +95,8 @@ $(document).ready(function () {
             type: "fraction",
 
             renderFraction: function (currentClass, totalClass) {
-                return `<div class="row__curentSlide curentSlide ${currentClass}"></div>
-                        <div class="row__AllSlides AllSlides ${totalClass}"></div>
+                return `<div class="row__curentSlide text--blue ${currentClass}"></div>
+                        <div class="row__AllSlides  ${totalClass}"></div>
                 `;
             },
         },
@@ -131,8 +131,8 @@ $(document).ready(function () {
             type: "fraction",
 
             renderFraction: function (currentClass, totalClass) {
-                return `<div class="row__curentSlide2 curentSlide ${currentClass}"></div>
-                        <div class="row__AllSlides2 AllSlides ${totalClass}"></div>
+                return `<div class="row__curentSlide2 text--blue ${currentClass}"></div>
+                        <div class="row__AllSlides2  ${totalClass}"></div>
                 `;
             },
         },
@@ -142,4 +142,6 @@ $(document).ready(function () {
             prevEl: ".goLeft2",
         },
     });
+
+    $(".news__formBox").validate();
 });
