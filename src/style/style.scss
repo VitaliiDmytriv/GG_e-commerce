@@ -43,6 +43,18 @@ body {
 
 // Add to cart btn ==================
 
+.titleSection {
+    font-size: calc(1.275rem + 0.490625vw);
+    font-weight: 700;
+}
+
+.small-txt {
+    color: $clr-text;
+    @include fontSize(16, 11.4rem, 20, 15em);
+}
+
+// ===========================
+
 .circle {
     width: 1.875rem;
     height: 1.875rem;
@@ -52,12 +64,43 @@ body {
     justify-content: center;
     border-radius: 50%;
     display: inline-flex;
+    cursor: pointer;
 }
 
 .callToAction {
     display: inline-block;
     margin-left: 0.6em;
     text-transform: uppercase;
+}
+
+.sizeCircle-sm {
+    width: calc(1.1rem + 1vw);
+    height: calc(1.1rem + 1vw);
+
+    @media (min-width: $break-556px) {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    @media (min-width: $break-968px) {
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+
+    .fa-plus {
+        font-size: calc(0.6rem + 1vw);
+
+        @media (min-width: $break-556px) {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.sizeText-sm {
+    font-size: calc(0.625rem + 0.5vw);
+    @media (min-width: $break-556px) {
+        @include fontSize(17, 12.9rem, 29);
+    }
 }
 
 // Fraction ==================
@@ -467,6 +510,14 @@ body {
         border-bottom: 2px solid $clr-text;
     }
 
+    &__backImg {
+        position: absolute;
+        z-index: -1;
+        filter: grayscale(100%);
+
+        opacity: 0.1;
+    }
+
     &__backName {
         top: 47%;
         @include fontSize(85, 80.5rem, 100);
@@ -480,10 +531,8 @@ body {
         grid-row: 2;
     }
 
-    &__title {
-        color: $clr-text;
-        @include fontSize(16, 11.4rem, 20, 15em);
-    }
+    // &__title {
+    // }
 
     &__price {
         @include fontSize(25, 20.4rem, 35);
@@ -496,14 +545,8 @@ body {
 
     &__heading {
         font-weight: 700;
-        @include fontSize(25, 20.4rem, 30, 20em);
+        @include fontSize(25, 20.4rem, 38, 20em);
     }
-
-    // &__addCircle {
-    // }
-
-    // &__addText {
-    // }
 
     &__img {
         grid-column: 2;
@@ -569,8 +612,9 @@ body {
         grid-row: 1;
         align-self: center;
 
-        font-size: calc(1.275rem + 0.490625vw);
-        font-weight: 700;
+        @media (min-width: $break-800px) {
+            grid-column: 2 / 7;
+        }
     }
 
     &__action {
@@ -579,6 +623,10 @@ body {
         align-self: center;
         justify-self: flex-end;
         font-weight: 500;
+
+        @media (min-width: $break-800px) {
+            grid-column: 6 / 12;
+        }
     }
 
     &__backName {
@@ -594,10 +642,6 @@ body {
         @media (min-width: $break-800px) {
             font-size: calc(10rem + 8vw);
         }
-
-        // @media (min-width: $break-1300px) {
-        //     font-size: calc(14rem + 1vw);
-        // }
     }
 
     &__vertTxt {
@@ -650,16 +694,22 @@ body {
     // &__wrapper {
     // }
 
-    // &__slide {
-    // }
+    &__slide {
+        display: flex;
+    }
 
     // &__card {
     // }
 }
 
+.swiper-slide {
+    height: auto;
+}
+
 .rw-card {
     display: flex;
     flex-direction: column;
+    flex: 1;
 
     &__img {
         text-align: center;
@@ -672,16 +722,14 @@ body {
         text-align: center;
         margin-top: calc(0.5rem + 1vw);
         flex: 1;
+        display: flex;
+        flex-direction: column;
     }
 
     &__name {
         font-weight: 500;
         @include fontSize(20, 15.4rem, 33);
-    }
-
-    &__mark {
-        @include fontSize(14, 10.4rem, 20);
-        color: $clr-text;
+        flex: 1;
     }
 
     &__price {
@@ -690,27 +738,41 @@ body {
     }
 
     &__addCircle {
-        width: calc(1.1rem + 1vw);
-        height: calc(1.1rem + 1vw);
-
-        @media (min-width: $break-556px) {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-
-        .fa-plus {
-            font-size: calc(0.6rem + 1vw);
-
-            @media (min-width: $break-556px) {
-                font-size: 0.8rem;
-            }
-        }
     }
 
     &__addText {
-        font-size: calc(0.625rem + 0.5vw);
-        @media (min-width: $break-556px) {
-            @include fontSize(17, 12.9rem, 29);
+    }
+}
+
+// ===================================================
+
+.proGamers {
+    .cg-cart {
+        border-bottom: 2px solid #72748e;
+        border-top: 0;
+
+        .cg-cart__heading {
+            @include fontSize(20, 14.4rem, 30, 20em);
+
+            @media (min-width: $break-556px) {
+                font-size: calc(1.275rem + 0.490625vw);
+            }
+        }
+
+        &:hover img {
+            filter: grayscale(0%);
+            animation: ds;
+        }
+
+        img {
+            max-width: 200%;
+            right: 30%;
+            filter: grayscale(0%);
+            transform: scale(1);
+
+            @media (min-width: $break-556px) {
+                max-width: 160%;
+            }
         }
     }
 }
@@ -718,6 +780,99 @@ body {
 .marg {
     margin-top: 500px;
 }
+
+// News letter ====================================
+
+.news {
+    position: relative;
+    border-bottom: 1px solid $clr-text;
+    overflow: hidden;
+
+    .grid12x6 {
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    &__title {
+        grid-row: 2;
+        grid-column: 1 / span 6;
+    }
+
+    &__backImg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -4;
+        opacity: 0.2;
+        filter: grayscale(100%);
+        @media (max-width: $break-968px) {
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__backName {
+        top: 50%;
+        left: -3%;
+        transform: translateY(-50%);
+        font-size: calc(4rem + 5vw);
+
+        @media (min-width: $break-556px) {
+            font-size: calc(7rem + 5vw);
+        }
+
+        @media (min-width: $break-800px) {
+            font-size: calc(9rem + 7vw);
+        }
+    }
+
+    &__smallTxt {
+        grid-row: 2;
+        grid-column: 7 / span 6;
+    }
+
+    &__formTitle {
+        grid-row: 3;
+        grid-column: 1 / -1;
+        align-self: flex-end;
+        text-transform: uppercase;
+        font-weight: 700;
+        @include fontSize(20, 13.4rem, 30);
+
+        span {
+            color: $clr-blue;
+        }
+    }
+
+    &__formBox {
+        grid-row: 4;
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 0;
+    }
+
+    &__InputEmail {
+        flex: 1;
+        padding: 5px;
+        @include fontSize(20, 13.4rem, 30);
+        background-color: transparent;
+        border-bottom: 1px solid $clr-text;
+        color: $clr-text;
+
+        @media (min-width: $break-800px) {
+            flex: 0.7;
+        }
+    }
+
+    &__CTA-subscribe {
+        cursor: pointer;
+    }
+}
+
 // Keyframes ======================
 
 @keyframes moveAround {

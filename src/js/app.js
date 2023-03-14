@@ -72,6 +72,7 @@ $(document).ready(function () {
     const width1300px = fontSize * 81.25;
 
     new Swiper(".row__slider", {
+        speed: 700,
         breakpoints: {
             // when window width is >= 320px
             200: {
@@ -107,6 +108,7 @@ $(document).ready(function () {
     });
 
     new Swiper(".row__slider2", {
+        speed: 700,
         breakpoints: {
             // when window width is >= 320px
             200: {
