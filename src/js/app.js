@@ -71,11 +71,11 @@ $(document).ready(function () {
     const width800px = fontSize * 50;
     const width1300px = fontSize * 81.25;
 
-    new Swiper(".row__slider", {
+    new Swiper(".rowProductSwiper__slider", {
         speed: 700,
         breakpoints: {
             // when window width is >= 320px
-            200: {
+            350: {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },
@@ -95,8 +95,8 @@ $(document).ready(function () {
             type: "fraction",
 
             renderFraction: function (currentClass, totalClass) {
-                return `<div class="row__curentSlide text--blue ${currentClass}"></div>
-                        <div class="row__AllSlides  ${totalClass}"></div>
+                return `<div class="rowProductSwiper__curentSlide text--blue ${currentClass}"></div>
+                        <div class="rowProductSwiper__AllSlides  ${totalClass}"></div>
                 `;
             },
         },
@@ -107,7 +107,7 @@ $(document).ready(function () {
         },
     });
 
-    new Swiper(".row__slider2", {
+    new Swiper(".rowProductSwiper__slider2", {
         speed: 700,
         breakpoints: {
             // when window width is >= 320px
@@ -131,8 +131,8 @@ $(document).ready(function () {
             type: "fraction",
 
             renderFraction: function (currentClass, totalClass) {
-                return `<div class="row__curentSlide2 text--blue ${currentClass}"></div>
-                        <div class="row__AllSlides2  ${totalClass}"></div>
+                return `<div class="rowProductSwiper__curentSlide2 text--blue ${currentClass}"></div>
+                        <div class="rowProductSwiper__AllSlides2  ${totalClass}"></div>
                 `;
             },
         },
