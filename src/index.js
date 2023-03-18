@@ -1,3 +1,13 @@
+import $ from "jquery";
+import "jquery-validation";
+
+import Swiper from "swiper";
+import "swiper/css";
+
+import "@fortawesome/fontawesome-free/css/all.css";
+
+import "./style/style.scss";
+
 $(document).ready(function () {
     const slides = $(".hero__slide").toArray();
     const moveR = $(".fa-chevron-right");
