@@ -1,3 +1,15 @@
+import $ from "jquery";
+import "jquery-validation";
+
+import Swiper, { Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import "@fortawesome/fontawesome-free/css/all.css";
+
+import "./style/style.scss";
+
 $(document).ready(function () {
     const slides = $(".hero__slide").toArray();
     const moveR = $(".fa-chevron-right");
@@ -72,6 +84,7 @@ $(document).ready(function () {
     const width1300px = fontSize * 81.25;
 
     new Swiper(".rowProductSwiper__slider", {
+        modules: [Navigation, Pagination],
         speed: 700,
         breakpoints: {
             // when window width is >= 320px
@@ -108,6 +121,7 @@ $(document).ready(function () {
     });
 
     new Swiper(".rowProductSwiper__slider2", {
+        modules: [Navigation, Pagination],
         speed: 700,
         breakpoints: {
             // when window width is >= 320px

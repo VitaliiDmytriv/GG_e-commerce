@@ -4,8 +4,14 @@
     "description": "This is my pet-Project.\r I'm gonna built website for purchasing!)",
     "main": "index.js",
     "scripts": {
-        "start": "live-server"
+        "start": "cross-env NODE_ENV=development webpack serve --open",
+        "dev": "cross-env NODE_ENV=development webpack",
+        "build": "cross-env NODE_ENV=production webpack"
     },
+    "browserslist": [
+        "last 2 versions",
+        "ie 11"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/VitaliiDmytriv/WebStore_Project.git"
@@ -17,15 +23,31 @@
         "url": "https://github.com/VitaliiDmytriv/WebStore_Project/issues"
     },
     "homepage": "https://github.com/VitaliiDmytriv/WebStore_Project#readme",
-    "dependencies": {
-        "live-server": "^1.2.2"
-    },
     "devDependencies": {
-        "gulp": "^4.0.2",
-        "gulp-concat": "^2.6.1",
-        "gulp-sass": "^5.1.0",
-        "gulp-sourcemaps": "^3.0.0",
-        "gulp-watch": "^5.0.1",
-        "sass": "^1.58.0"
+        "@babel/core": "^7.21.3",
+        "@babel/preset-env": "^7.20.2",
+        "babel-loader": "^9.1.2",
+        "clean-webpack-plugin": "^4.0.0",
+        "cross-env": "^7.0.3",
+        "css-loader": "^6.7.3",
+        "html-loader": "^4.2.0",
+        "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.7.5",
+        "postcss": "^8.4.21",
+        "postcss-loader": "^7.1.0",
+        "postcss-preset-env": "^8.0.1",
+        "sass": "^1.59.3",
+        "sass-loader": "^13.2.0",
+        "style-loader": "^3.3.2",
+        "webpack": "^5.76.2",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.12.0"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.3.0",
+        "acorn": "^8.8.2",
+        "jquery": "^3.6.4",
+        "jquery-validation": "^1.19.5",
+        "swiper": "^9.1.1"
     }
 }
